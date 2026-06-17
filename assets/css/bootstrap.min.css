@@ -82,10 +82,7 @@
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
   --font-one: "Source Code Pro", monospace;
-  --font-two: "SF Pro Display", sans-serif;
-  --font-two-medium: "SF Pro Display", sans-serif;
-  --font-two-regular: "SF Pro Display", sans-serif;
-  --font-two-thinitalic: "SF Pro Display", sans-serif;
+  --font-two: "Google Sans", sans-serif;
 }
 *,
 ::after,

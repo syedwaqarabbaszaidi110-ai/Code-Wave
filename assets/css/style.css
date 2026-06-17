@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap");
 * {
   margin: 0px;
   padding: 0px;
@@ -14,7 +13,7 @@ html {
 }
 body {
   background: var(--bg-body);
-  font-family: var(--font-sf-pro);
+  font-family: var(--font-two);
   color: var(--c5);
 }
 .wrapper {
@@ -66,7 +65,6 @@ p.web-color {
 }
 h2.web-title {
   font-size: 54px;
-  font-family: var(--font-two-medium);
   line-height: 1.4;
   opacity: 1;
 }
@@ -229,7 +227,6 @@ h5.web-title {
 .header_menu ul {
   display: flex;
   gap: 40px;
-  padding: 20px 0px;
   border-radius: 30px;
   position: relative;
   background: #010d46;
@@ -265,34 +262,28 @@ h5.web-title {
   z-index: 1;
   filter: blur(50px);
 }
-.header_menu ul::before,
-.header_menu ul::after {
+.header_menu ul li a::before,
+.header_menu ul li a::after {
   content: "";
   position: absolute;
-  width: 10%;
+  width: 100%;
   height: 100%;
-  bottom: -20px;
-  left: 20px;
-  border-radius: 22px;
+  bottom: -10px;
+  left: 0;
+  border-radius: 50%;
   z-index: 0;
   filter: blur(30px);
+  background: #5069b2b5;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.6s ease-in-out;
+  z-index: 0;
 }
 .header_menu ul::before {
   background: #57459a;
 }
 .header_menu ul::after {
   background: #5069b2;
-}
-.header_menu ul::after {
-  content: "";
-  position: absolute;
-  width: 10%;
-  height: 100%;
-  bottom: -40px;
-  left: 20px;
-  border-radius: 22px;
-  z-index: 9;
-  filter: blur(50px);
 }
 
 /* BANNER START */
@@ -320,7 +311,6 @@ h5.web-title {
 }
 .banner-content-inner h1 {
   font-size: 80px;
-  font-family: var(--font-two);
 }
 .banner-btn {
   margin-top: 30px;
@@ -531,6 +521,8 @@ span.box.four {
 }
 .about-image img {
   border-radius: 40px;
+  height: 700px;
+  object-fit: cover;
 }
 
 .about-image a.icon {
@@ -560,6 +552,7 @@ a.icon img {
   width: 50px;
   height: 80px;
   transition: all 0.6s ease-in-out;
+  object-fit: contain;
 }
 
 /* TEAM */
@@ -677,7 +670,30 @@ a.icon img {
   margin-top: 20px;
 }
 .different .img {
-  margin-top: -200px;
+  margin-top: -180px;
+  transition: all 0.8s ease-in-out;
+  transform: translateY(0px);
+  animation: up-down 3s infinite linear;
+  position: relative;
+}
+.different .img::after {
+  content: "";
+  position: absolute;
+  width: 150px;
+  bottom: -80px;
+  border-radius: 50%;
+  filter: blur(90px);
+  background-color: #7e93ff;
+  height: 200px;
+  opacity: 1;
+  transition: opacity 0.6s ease-in-out;
+  z-index: 0;
+  transform: rotateX(245deg);
+  left: 30%;
+}
+.different-box:hover .img {
+  margin-top: -220px;
+  animation: unset;
 }
 .different-box.margin-minus {
   margin-top: -150px;
@@ -690,6 +706,24 @@ a.icon img {
 .different-box:hover .content::after {
   opacity: 1;
 }
+@keyframes up-down {
+  0% {
+    transform: translateY(0);
+  }
+
+  33% {
+    transform: translateY(20px);
+  }
+
+  60% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .different-box .content::after {
   content: "";
   position: absolute;
@@ -793,6 +827,39 @@ a.icon {
 }
 
 /* BLOG */
+.blog-main::before {
+  z-index: 9;
+  content: "";
+  display: block;
+  width: 0;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #ffffff33;
+  box-shadow: 0 0 150px 130px #ffffff73;
+  transform: skewX(-20deg);
+}
+
+.blog-main:hover::before {
+  animation: sh02 0.5s 0s linear;
+}
+
+.blog-main:hover .img img {
+  transform: scale(1.1);
+}
+
+.blog-main .img {
+  height: 500px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.blog-main .img img {
+  height: 100%;
+  transition: all 0.7s ease-in-out;
+}
 .blog-head p {
   max-width: 660px;
   margin: 0 auto 80px;
@@ -800,12 +867,12 @@ a.icon {
 .blog-main {
   position: relative;
   overflow: hidden;
-  border-radius: 25px;
+  border-radius: 28px;
 }
 .blog-main .content {
   position: absolute;
-  left: 30px;
-  bottom: 30px;
+  left: 15px;
+  bottom: 15px;
   z-index: 999;
 }
 .blog-main::after {
@@ -994,6 +1061,8 @@ button.submit-btn:hover {
   gap: 12px;
   height: 100%;
   overflow: hidden;
+  transition: all .7s ease-in-out;
+  opacity: 1 !important;
 }
 .contact-box::after {
   content: "";
@@ -1017,6 +1086,24 @@ button.submit-btn:hover {
   background: #57449a36;
   padding: 15px;
   border-radius: 50%;
+  overflow: hidden;
+}
+.contact-box .icon::after {
+  content: "";
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #fff;
+  box-shadow: 0 0 50px 30px #fff;
+  transform: skewX(-20deg);
+}
+
+.contact-box:hover .icon::after {
+  animation: sh02 0.5s 0s linear;
 }
 .contact-box .conten {
   display: flex;
@@ -1026,7 +1113,7 @@ button.submit-btn:hover {
 }
 
 .idea h2.web-title {
-  font-size: 44px;
+  font-size: 38px;
   margin-bottom: 30px;
 }
 .site-logo p {
@@ -1040,7 +1127,7 @@ button.submit-btn:hover {
 }
 
 .info-item span {
-  font-size: 40px;
+  font-size: 32px;
   margin-bottom: 30px !important;
   display: block;
   font-weight: 600;
@@ -1295,8 +1382,6 @@ button.submit-btn:hover {
   filter: drop-shadow(0 0 8px var(--c6));
 }
 
-/* cursor */
-
 .cursor1 {
   position: fixed;
   width: 40px;
@@ -1379,7 +1464,6 @@ button.submit-btn:hover {
   border-right: none;
 }
 
-/* ---------- Ambient Glow Orbs ---------- */
 .svc-orb {
   position: absolute;
   border-radius: 50%;
@@ -1422,7 +1506,6 @@ button.submit-btn:hover {
   border-radius: 100px;
   margin-bottom: 20px;
   position: relative;
-  /* eyebrow glimmer line */
 }
 .svc-eyebrow::before {
   content: "";
@@ -1432,7 +1515,6 @@ button.submit-btn:hover {
   background: rgba(73, 98, 172, 0.08);
 }
 
-/* ---------- Cards ---------- */
 .svc-cards-row {
   position: relative;
   z-index: 1;
@@ -1454,7 +1536,6 @@ button.submit-btn:hover {
   gap: 16px;
 }
 
-/* Hover shimmer overlay */
 .svc-card::before {
   content: "";
   position: absolute;
@@ -1476,7 +1557,6 @@ button.submit-btn:hover {
   background: rgba(73, 98, 172, 0.06);
 }
 
-/* Icon */
 .svc-card-icon {
   width: 52px;
   height: 52px;
@@ -1500,7 +1580,6 @@ button.submit-btn:hover {
   border-color: var(--c6, #4962ac);
 }
 
-/* Content */
 .svc-card-content h3 {
   font-size: 33px;
   color: var(--web-title-color, #fff);
@@ -1509,7 +1588,6 @@ button.submit-btn:hover {
   font-weight: 600;
 }
 
-/* Arrow */
 .svc-card-arrow {
   margin-top: auto;
   width: 60px;
@@ -1535,7 +1613,6 @@ button.submit-btn:hover {
   transform: rotate(-45deg);
 }
 
-/* Card number watermark */
 .svc-card-num {
   position: absolute;
   bottom: 18px;
@@ -1552,7 +1629,6 @@ button.submit-btn:hover {
   color: rgba(73, 98, 172, 0.08);
 }
 
-/* ---------- Bottom CTA Strip ---------- */
 .svc-bottom-strip {
   position: relative;
   z-index: 1;
@@ -1573,15 +1649,11 @@ button.submit-btn:hover {
   color: rgba(255, 255, 255, 0.8);
 }
 
-/* ---------- Loader-after entrance (JS adds .svc-loaded to section) ---------- */
-/* Cards start invisible; JS animates them in */
 .svc-card-col {
   opacity: 0;
   transform: translateY(60px);
 }
-/* When above the fold on first load, JS overrides this via GSAP */
 
-/* ---------- Responsive ---------- */
 @media (max-width: 768px) {
   .svc-bottom-strip {
     flex-direction: column;
@@ -1645,34 +1717,17 @@ span.btn-icon .icon img {
   transform: rotate(45deg);
 }
 .header_menu ul li a {
-  position: relative;
-  overflow: hidden;
   font-size: 16px;
-}
-
-.header_menu ul li a::before {
-  position: absolute;
-  content: "";
-  width: 100%;
-  height: 2px;
-  background: var(--c1);
-  bottom: 0px;
-  left: -100%;
+  padding: 20px 0px;
   transition: all 0.6s ease-in-out;
+  position: relative;
+  z-index: 999;
+}
+.header_menu ul li a:hover::before,
+.header_menu ul li a:hover::after {
+  opacity: 1;
 }
 
-.header_menu ul li a:hover::before {
-  left: 0;
-}
-
-
-/* ============================================================
-   CODEWAVE ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â MOBILE NAV CSS
-   Add this at the bottom of your responcive.css
-   OR in a separate file and link it in header.php
-   ============================================================ */
-
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Hamburger Button ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
 .hamburger {
   display: flex;
   flex-direction: column;
@@ -1693,14 +1748,21 @@ span.btn-icon .icon img {
   background: #ffffff;
   border-radius: 2px;
   transform-origin: center;
-  transition: transform 0.4s cubic-bezier(0.23, 1, 0.32, 1),
-              opacity   0.3s ease,
-              width     0.4s cubic-bezier(0.23, 1, 0.32, 1);
+  transition:
+    transform 0.4s cubic-bezier(0.23, 1, 0.32, 1),
+    opacity 0.3s ease,
+    width 0.4s cubic-bezier(0.23, 1, 0.32, 1);
 }
 
-.line-1 { width: 28px; }
-.line-2 { width: 20px; }
-.line-3 { width: 24px; }
+.line-1 {
+  width: 28px;
+}
+.line-2 {
+  width: 20px;
+}
+.line-3 {
+  width: 24px;
+}
 
 /* Active (X) state */
 .hamburger.is-active .line-1 {
@@ -1716,7 +1778,6 @@ span.btn-icon .icon img {
   transform: translateY(-8px) rotate(-45deg);
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Overlay ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
 .mobile-nav-overlay {
   position: fixed;
   inset: 0;
@@ -1726,7 +1787,9 @@ span.btn-icon .icon img {
   z-index: 9999998;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.4s ease, visibility 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    visibility 0.4s ease;
 }
 
 .mobile-nav-overlay.active {
@@ -1734,7 +1797,6 @@ span.btn-icon .icon img {
   visibility: visible;
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Mobile Nav Panel ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
 .mobile-nav {
   position: fixed;
   top: 0;
@@ -1748,11 +1810,7 @@ span.btn-icon .icon img {
   flex-direction: column;
   padding: 0;
   overflow: hidden;
-
-  /* Gradient border on left */
   border-left: 1px solid rgba(84, 78, 160, 0.4);
-
-  /* Slide from right */
   transform: translateX(100%);
   transition: transform 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
@@ -1761,13 +1819,16 @@ span.btn-icon .icon img {
   transform: translateX(0);
 }
 
-/* Glow decoration */
 .mobile-nav-glow {
   position: absolute;
   width: 300px;
   height: 300px;
   border-radius: 50%;
-  background: radial-gradient(circle, rgba(73, 98, 172, 0.25) 0%, transparent 70%);
+  background: radial-gradient(
+    circle,
+    rgba(73, 98, 172, 0.25) 0%,
+    transparent 70%
+  );
   bottom: -80px;
   right: -80px;
   pointer-events: none;
@@ -1775,7 +1836,6 @@ span.btn-icon .icon img {
   filter: blur(40px);
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Nav Header ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
 .mobile-nav-header {
   display: flex;
   align-items: center;
@@ -1804,7 +1864,9 @@ span.btn-icon .icon img {
   color: #ffffff;
   font-size: 16px;
   cursor: pointer;
-  transition: background 0.3s ease, transform 0.3s ease;
+  transition:
+    background 0.3s ease,
+    transform 0.3s ease;
   flex-shrink: 0;
 }
 .mobile-nav-close:hover {
@@ -1812,7 +1874,6 @@ span.btn-icon .icon img {
   transform: rotate(90deg);
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Nav Links ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
 .mobile-nav-links {
   list-style: none;
   padding: 16px 0;
@@ -1824,19 +1885,22 @@ span.btn-icon .icon img {
 
   /* Custom scrollbar */
   scrollbar-width: thin;
-  scrollbar-color: rgba(73,98,172,0.4) transparent;
+  scrollbar-color: rgba(73, 98, 172, 0.4) transparent;
 }
-.mobile-nav-links::-webkit-scrollbar { width: 4px; }
+.mobile-nav-links::-webkit-scrollbar {
+  width: 4px;
+}
 .mobile-nav-links::-webkit-scrollbar-thumb {
-  background: rgba(73,98,172,0.4);
+  background: rgba(73, 98, 172, 0.4);
   border-radius: 4px;
 }
 
-/* Each item starts hidden ÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Â JS/CSS animation drives it */
 .mobile-nav-item {
   opacity: 0;
   transform: translateX(30px);
-  transition: opacity 0.4s ease, transform 0.4s ease;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease;
   transition-delay: calc(var(--i) * 0.06s);
 }
 
@@ -1853,15 +1917,17 @@ span.btn-icon .icon img {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   font-size: 18px;
-  font-family: var(--font-two-medium, sans-serif);
   border-bottom: 1px solid rgba(255, 255, 255, 0.04);
   position: relative;
-  transition: color 0.3s ease, padding-left 0.3s ease, background 0.3s ease;
+  transition:
+    color 0.3s ease,
+    padding-left 0.3s ease,
+    background 0.3s ease;
   overflow: hidden;
 }
 
 .mobile-nav-link::before {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   top: 0;
@@ -1907,7 +1973,9 @@ span.btn-icon .icon img {
   font-size: 13px;
   opacity: 0;
   transform: translateX(-8px);
-  transition: opacity 0.3s ease, transform 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
 }
 
 .mobile-nav-link:hover .nav-arrow {
@@ -1916,7 +1984,6 @@ span.btn-icon .icon img {
   color: #4962ac;
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Nav Footer ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
 .mobile-nav-footer {
   padding: 24px 28px;
   border-top: 1px solid rgba(255, 255, 255, 0.06);
@@ -1929,7 +1996,9 @@ span.btn-icon .icon img {
 
   opacity: 0;
   transform: translateY(20px);
-  transition: opacity 0.4s ease 0.5s, transform 0.4s ease 0.5s;
+  transition:
+    opacity 0.4s ease 0.5s,
+    transform 0.4s ease 0.5s;
 }
 
 .mobile-nav.is-open .mobile-nav-footer {
@@ -1957,7 +2026,10 @@ span.btn-icon .icon img {
   background: rgba(255, 255, 255, 0.05);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+  transition:
+    background 0.3s ease,
+    border-color 0.3s ease,
+    transform 0.3s ease;
 }
 .mobile-socials a:hover {
   background: rgba(73, 98, 172, 0.3);
@@ -1968,13 +2040,10 @@ span.btn-icon .icon img {
   width: 16px;
   height: 16px;
 }
-
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Body lock when nav open ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
 body.nav-open {
   overflow: hidden;
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Only show on mobile/tablet ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
 @media (min-width: 992px) {
   .mobile-nav,
   .mobile-nav-overlay,
@@ -1983,7 +2052,6 @@ body.nav-open {
   }
 }
 
-/* ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ Width tweak for very small screens ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ÃƒÂ¢Ã¢â‚¬ÂÃ¢â€šÂ¬ */
 @media (max-width: 375px) {
   .mobile-nav {
     width: 100vw;
@@ -2002,14 +2070,17 @@ body.nav-open {
   }
 }
 .banner-content-text p {
-    font-size: 22px;
+  font-size: 22px;
 }
 .discover-box p span {
-    font-size: 20px;
-    font-weight: 500;
-    display: block;
-    margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 10px;
 }
 .contact-form-wrapper form {
-    margin-top: 20px;
+  margin-top: 20px;
+}
+.footer .site-logo {
+  padding-right: 100px;
 }

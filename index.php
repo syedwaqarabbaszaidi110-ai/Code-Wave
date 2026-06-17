@@ -228,7 +228,7 @@
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="about-content">
                     <h2 class="web-title" style="font-weight: 100;">About</h2>
-                    <h2 class="web-title" >CodeWave</h2>
+                    <h2 class="web-title">CodeWave</h2>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12">
@@ -238,7 +238,7 @@
             </div>
             <div class="col-lg-12">
                 <div class="about-image">
-                    <img src="assets/images/landing/about.png" alt="">
+                    <img src="assets/images/landing/about.jpg" alt="">
                     <a class="icon" href="javascript:void(0)">
                         <img src="assets/images/icon/arrow.svg" alt="">
                     </a>
@@ -301,38 +301,41 @@
                         </div>
                         <h6 class="web-title">Discover</h6>
                         <p>
-                            <span>Your Vision Before We Build</span>
-                            Every successful product starts with clarity. We begin by understanding your business, audience, goals, and challenges to uncover insights that shape the foundation of a meaningful digital experience.
+                            <span>Understanding Your Vision</span>
+                            We start by learning about your business, audience, goals, and challenges to uncover valuable insights that shape the foundation of your digital product.
                         </p>
                     </div>
+
                     <div class="discover-box">
                         <div class="count">
-                            <span>01</span>
+                            <span>02</span>
                         </div>
-                        <h6 class="web-title">Discover</h6>
+                        <h6 class="web-title">Strategize</h6>
                         <p>
-                            <span>Your Vision Before We Build</span>
-                            Every successful product starts with clarity. We begin by understanding your business, audience, goals, and challenges to uncover insights that shape the foundation of a meaningful digital experience.
+                            <span>Creating a Clear Roadmap</span>
+                            Our team defines user journeys, project requirements, and a strategic plan to ensure every decision aligns with your business objectives.
                         </p>
                     </div>
+
                     <div class="discover-box">
                         <div class="count">
-                            <span>01</span>
+                            <span>03</span>
                         </div>
-                        <h6 class="web-title">Discover</h6>
+                        <h6 class="web-title">Design & Develop</h6>
                         <p>
-                            <span>Your Vision Before We Build</span>
-                            Every successful product starts with clarity. We begin by understanding your business, audience, goals, and challenges to uncover insights that shape the foundation of a meaningful digital experience.
+                            <span>Bringing Ideas to Life</span>
+                            We craft intuitive interfaces and build scalable solutions using modern technologies to deliver seamless and engaging user experiences.
                         </p>
                     </div>
+
                     <div class="discover-box">
                         <div class="count">
-                            <span>01</span>
+                            <span>04</span>
                         </div>
-                        <h6 class="web-title">Discover</h6>
+                        <h6 class="web-title">Launch & Grow</h6>
                         <p>
-                            <span>Your Vision Before We Build</span>
-                            Every successful product starts with clarity. We begin by understanding your business, audience, goals, and challenges to uncover insights that shape the foundation of a meaningful digital experience.
+                            <span>Supporting Your Success</span>
+                            After launch, we monitor performance, gather feedback, and continuously optimize your product to help your brand grow and evolve.
                         </p>
                     </div>
                 </div>

@@ -1,85 +1,11 @@
-/* @media only screen and (min-width: 100px) and (max-width: 1399px) {
-  .header {
-    top: 40px;
-  }
-  .header_menu ul {
-    gap: 12px;
-    padding: 18px 0px;
-  }
-  .hover-btn {
-    gap: 8px;
-    padding: 12px 30px;
-    border-radius: 12px;
-  }
-  .banner-content-inner h1 {
-    font-size: 72px;
-  }
-  .banner-content-box {
-    left: 10px;
-    bottom: 35%;
-  }
-  .teams-content h2.web-title {
-    font-size: 92px;
-  }
-  .teams-content.two h2.web-title:nth-child(1) {
-    margin-left: 30px;
-  }
-  .team-img.two {
-    left: 10px;
-    bottom: -100px;
-  }
-  .anitmation {
-    height: 700px;
-    gap: 20px;
-    margin-bottom: 80px;
-    padding: 60px 100px 0px;
-  }
-  h5.web-title {
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  .different .img {
-    margin-top: -150px;
-  }
-  .different-box {
-    padding: 30px;
-  }
-  .different-box.margin-minus {
-    margin-top: -130px;
-    height: 530px !important;
-  }
-  .different .row:last-child .col-lg-4:nth-child(odd) .different-box {
-    height: 450px;
-  }
-  .contact-form-wrapper {
-    padding: 50px 40px;
-    border-radius: 30px;
-    margin-bottom: 60px;
-  }
-  h2.web-title {
-    font-size: 44px;
-  }
-  .form-group label,
-  .interest-wrap > label {
-    font-size: 20px;
-    margin-bottom: 12px;
-  }
-  .interest-item span {
-    padding: 10px 20px;
-    border-radius: 40px;
-    font-size: 13px;
-  }
-  .submit-btn {
-    font-size: 28px;
-  }
-  .submit-btn .icon {
-    padding: 20px;
-  }
-} */
 /* ============================================================
    3. STANDARD DESKTOPS  1200px – 1399px
    ============================================================ */
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  .idea h2.web-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
   p {
     font-size: 17px;
   }
@@ -183,6 +109,9 @@
    4. SMALL DESKTOPS / LARGE TABLETS  992px – 1199px
    ============================================================ */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .footer .site-logo {
+    padding-right: 0px;
+  }
   /* Header */
   .header {
     top: 30px;
@@ -344,6 +273,9 @@
    5. TABLETS (LANDSCAPE & PORTRAIT)  768px – 991px
    ============================================================ */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer .site-logo {
+    padding-right: 300px;
+  }
   .about-image img {
     border-radius: 30px;
     object-fit: cover;
@@ -351,7 +283,7 @@
   }
   a.icon img {
     object-fit: contain;
-}
+  }
   .banner-content-text {
     text-align: center;
     max-width: 600px;
@@ -577,10 +509,6 @@
   }
   .footer-bottom {
     padding: 30px 0 20px;
-  }
-  .footer-bottom ul {
-    justify-content: flex-start;
-    margin-top: 10px;
   }
 
   /* Services */
@@ -911,14 +839,12 @@
     padding: 24px 0 16px;
   }
   .footer-bottom ul {
-    justify-content: flex-start;
     flex-wrap: wrap;
     gap: 12px;
   }
   .footer-bottom span {
     font-size: 13px;
   }
-
   /* Services */
   .services-pk {
     padding: 60px 0;
@@ -962,6 +888,21 @@
    7. SMALL MOBILE  320px – 445px
    ============================================================ */
 @media only screen and (min-width: 320px) and (max-width: 445px) {
+  .footer-bottom {
+    padding: 14px 0 6px;
+  }
+  .footer-bottom ul li a {
+    font-size: 11px;
+  }
+  .footer-bottom span {
+    font-size: 11px;
+  }
+  .footer-bottom ul li:first-child {
+    padding-right: 10px;
+  }
+  .footer-bottom ul {
+    gap: 10px;
+  }
   .team-img.one {
     display: none;
   }
