@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "SF-PRO_BlackItalic";
+  src: url("assets/fonts/Sf-Pro/SFPRODISPLAYBLACKITALIC.woff2") format("woff2"),
+  url("assets/fonts/Sf-Pro/SFPRODISPLAYBLACKITALIC.woff2") format("woff");
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF-PRO_bold";
+  src: url("./SFPRODISPLAYBOLD.woff2") format("woff2"),
+  url("assets/fonts/Sf-Pro/SFPRODISPLAYBOLD.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF-PRO_HeavyItalic";
+  src: url("assets/fonts/Sf-Pro/SFPRODISPLAYHEAVYITALIC.woff2") format("woff2"),
+  url("assets/fonts/Sf-Pro/SFPRODISPLAYHEAVYITALIC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF-PRO_LightItalic";
+  src: url("assets/fonts/Sf-Pro/SFPRODISPLAYLIGHTITALIC.woff2") format("woff2"),
+  url("assets/fonts/Sf-Pro/SFPRODISPLAYLIGHTITALIC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF-PRO_Medium";
+  src: url("assets/fonts/Sf-Pro/SFPRODISPLAYMEDIUM.woff2") format("woff2"),
+  url("assets/fonts/Sf-Pro/SFPRODISPLAYMEDIUM.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF-PRO_Regular";
+  src: url("assets/fonts/Sf-Pro/SFPRODISPLAYREGULAR.woff2") format("woff2"),
+  url("assets/fonts/Sf-Pro/SFPRODISPLAYREGULAR.woff2") format("woff");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "SF-PRO_SemiboldItalic";
+  src: url("assets/fonts/Sf-Pro/SFPRODISPLAYSEMIBOLDITALIC.woff2") format("woff2"),
+  url("assets/fonts/Sf-Pro/SFPRODISPLAYSEMIBOLDITALIC.woff2") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF-PRO_ULtralightItalic";
+  src: url("assets/fonts/Sf-Pro/SFPRODISPLAYULTRALIGHTITALIC.woff2") format("woff2"),
+  url("assets/fonts/Sf-Pro/SFPRODISPLAYULTRALIGHTITALIC.woff2") format("woff");
+  font-weight: 100;
+  font-style: italic ;
+}

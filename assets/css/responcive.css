@@ -1,0 +1,1165 @@
+/* @media only screen and (min-width: 100px) and (max-width: 1399px) {
+  .header {
+    top: 40px;
+  }
+  .header_menu ul {
+    gap: 12px;
+    padding: 18px 0px;
+  }
+  .hover-btn {
+    gap: 8px;
+    padding: 12px 30px;
+    border-radius: 12px;
+  }
+  .banner-content-inner h1 {
+    font-size: 72px;
+  }
+  .banner-content-box {
+    left: 10px;
+    bottom: 35%;
+  }
+  .teams-content h2.web-title {
+    font-size: 92px;
+  }
+  .teams-content.two h2.web-title:nth-child(1) {
+    margin-left: 30px;
+  }
+  .team-img.two {
+    left: 10px;
+    bottom: -100px;
+  }
+  .anitmation {
+    height: 700px;
+    gap: 20px;
+    margin-bottom: 80px;
+    padding: 60px 100px 0px;
+  }
+  h5.web-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .different .img {
+    margin-top: -150px;
+  }
+  .different-box {
+    padding: 30px;
+  }
+  .different-box.margin-minus {
+    margin-top: -130px;
+    height: 530px !important;
+  }
+  .different .row:last-child .col-lg-4:nth-child(odd) .different-box {
+    height: 450px;
+  }
+  .contact-form-wrapper {
+    padding: 50px 40px;
+    border-radius: 30px;
+    margin-bottom: 60px;
+  }
+  h2.web-title {
+    font-size: 44px;
+  }
+  .form-group label,
+  .interest-wrap > label {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .interest-item span {
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 13px;
+  }
+  .submit-btn {
+    font-size: 28px;
+  }
+  .submit-btn .icon {
+    padding: 20px;
+  }
+} */
+/* ============================================================
+   3. STANDARD DESKTOPS  1200px – 1399px
+   ============================================================ */
+@media only screen and (min-width: 1200px) and (max-width: 1399px) {
+  p {
+    font-size: 17px;
+  }
+  .blog-main .content h5.web-title {
+    margin-bottom: 15px;
+    font-size: 26px;
+  }
+  .contact-box {
+    padding: 30px;
+    gap: 20px;
+  }
+  .contact-box .conten {
+    font-size: 18px;
+  }
+  .blog-main .content {
+    left: 20px;
+    bottom: 20px;
+  }
+  .header {
+    top: 40px;
+  }
+  .header_menu ul {
+    gap: 12px;
+    padding: 18px 0;
+  }
+  .hover-btn {
+    gap: 8px;
+    padding: 12px 30px;
+    border-radius: 12px;
+  }
+  .banner-content-inner h1 {
+    font-size: 72px;
+  }
+  .banner-content-box {
+    left: 10px;
+    bottom: 35%;
+  }
+  h2.web-title {
+    font-size: 44px;
+  }
+  h5.web-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  .teams-content h2.web-title {
+    font-size: 92px;
+  }
+  .teams-content.two h2.web-title:nth-child(1) {
+    margin-left: 30px;
+  }
+  .team-img.two {
+    left: 10px;
+    bottom: -100px;
+  }
+  .anitmation {
+    height: 700px;
+    gap: 20px;
+    margin-bottom: 80px;
+    padding: 60px 100px 0;
+  }
+  .different .img {
+    margin-top: -150px;
+  }
+  .different-box {
+    padding: 30px;
+  }
+  .different-box.margin-minus {
+    margin-top: -130px;
+    height: 530px !important;
+  }
+  .different .row:last-child .col-lg-4:nth-child(odd) .different-box {
+    height: 450px;
+  }
+  .contact-form-wrapper {
+    padding: 50px 40px;
+    border-radius: 30px;
+    margin-bottom: 60px;
+  }
+  .form-group label,
+  .interest-wrap > label {
+    font-size: 20px;
+    margin-bottom: 12px;
+  }
+  .interest-item span {
+    padding: 10px 20px;
+    border-radius: 40px;
+    font-size: 13px;
+  }
+  .submit-btn {
+    font-size: 28px;
+  }
+  .submit-btn .icon {
+    padding: 20px;
+  }
+  .info-item span {
+    font-size: 34px;
+  }
+}
+
+/* ============================================================
+   4. SMALL DESKTOPS / LARGE TABLETS  992px – 1199px
+   ============================================================ */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* Header */
+  .header {
+    top: 30px;
+  }
+  .header_menu ul {
+    gap: 10px;
+    padding: 15px 10px;
+    font-size: 14px;
+  }
+  .hover-btn {
+    padding: 10px 22px;
+    font-size: 14px;
+    border-radius: 12px;
+  }
+
+  /* Banner */
+  .banner-img {
+    height: 800px;
+  }
+  .banner-content-inner h1 {
+    font-size: 58px;
+  }
+  .banner-content-box {
+    left: 10px;
+    bottom: 30%;
+  }
+  .banner-content-box-2 h6 {
+    font-size: 18px;
+  }
+  .wiew-project .icon {
+    width: 90px;
+    height: 90px;
+  }
+  .wiew-project .content span {
+    font-size: 16px;
+  }
+
+  /* Titles */
+  h2.web-title {
+    font-size: 38px;
+  }
+  h5.web-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  h6.web-title {
+    font-size: 34px;
+  }
+
+  /* Teams */
+  .teams-content h2.web-title {
+    font-size: 80px;
+  }
+  .teams-content.one h2.web-title:nth-child(1) {
+    margin-left: -200px;
+  }
+  .teams-content.one h2.web-title:nth-child(2) {
+    margin-left: 100px;
+  }
+  .team-img.two {
+    left: 10px;
+    bottom: -80px;
+  }
+
+  /* Finish / Anitmation */
+  .anitmation {
+    height: 650px;
+    padding: 60px 60px 0;
+    gap: 20px;
+    margin-bottom: 80px;
+  }
+  .discover-box {
+    padding: 40px 30px;
+  }
+
+  /* Different */
+  .different .img {
+    margin-top: -120px;
+  }
+  .different-box {
+    padding: 30px;
+  }
+  .different-box.margin-minus {
+    margin-top: -100px;
+    height: 440px !important;
+  }
+  .different .row:last-child .col-lg-4:nth-child(odd) .different-box {
+    height: 360px;
+  }
+  p {
+    font-size: 16px !important;
+    line-height: 1.4 !important;
+  }
+  .blog-main .content {
+    left: 20px;
+    bottom: 20px;
+  }
+  a.icon img {
+    width: 30px;
+    height: 60px;
+  }
+  .blog {
+    padding-top: 60px;
+  }
+  .blog-main .content h5.web-title {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  .form-group label,
+  .interest-wrap > label {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  /* Trusted */
+  .trusted-image {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 60px;
+  }
+
+  /* Form */
+  .contact-form-wrapper {
+    padding: 50px 40px;
+    border-radius: 28px;
+  }
+  .submit-btn {
+    font-size: 26px;
+  }
+  .submit-btn .icon {
+    padding: 18px;
+  }
+
+  /* Footer */
+  .info-item span {
+    font-size: 28px;
+  }
+  .info-item ul li a {
+    font-size: 15px;
+  }
+  .idea h2.web-title {
+    font-size: 36px;
+  }
+  .contact-box {
+    border-radius: 15px;
+    padding: 20px 14px;
+    gap: 12px;
+  }
+  .contact-box .icon {
+    padding: 12px;
+  }
+  .contact-box .conten {
+    gap: 10px;
+    font-size: 18px;
+  }
+}
+
+/* ============================================================
+   5. TABLETS (LANDSCAPE & PORTRAIT)  768px – 991px
+   ============================================================ */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .about-image img {
+    border-radius: 30px;
+    object-fit: cover;
+    height: 100%;
+  }
+  a.icon img {
+    object-fit: contain;
+}
+  .banner-content-text {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  p {
+    font-size: 15px !important;
+    line-height: 1.4 !important;
+  }
+  .box-content {
+    font-size: 18px;
+    padding: 10px 6px;
+  }
+  /* Cursor — hide on touch */
+  .cursor1,
+  .cursor2 {
+    display: none;
+  }
+
+  /* Header */
+  .header {
+    top: 20px;
+  }
+  .site-logo a {
+    width: 40%;
+  }
+
+  /* Banner */
+  .banner-img {
+    height: 700px;
+  }
+  .banner-content {
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    top: 50%;
+  }
+  .banner-content-inner h1 {
+    font-size: 48px;
+  }
+  .banner-btn {
+    margin-bottom: 40px;
+  }
+  .banner-content-box {
+    display: none;
+  }
+  .banner-content-box-2 {
+    display: none;
+  }
+  .wiew-project {
+    display: none;
+  }
+
+  /* Marquee */
+  .marquee-slider .marquee span {
+    font-size: 28px;
+  }
+  .marquee.image-marquee {
+    height: 360px;
+  }
+
+  /* Titles */
+  h2.web-title {
+    font-size: 34px;
+  }
+  h5.web-title {
+    font-size: 22px;
+    margin-bottom: 16px;
+  }
+  h6.web-title {
+    font-size: 28px;
+  }
+
+  /* Trusted */
+  .trusted-image {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 30px;
+  }
+  .marquee.image-marquee .marquee--inner,
+  .marquee.image-marquee .marquee--inner .track,
+  .marquee.image-marquee .marquee--inner .img,
+  .marquee.image-marquee .marquee--inner .img img {
+    height: 100%;
+  }
+
+  /* About */
+  .about-image {
+    margin-top: 30px;
+    height: 300px;
+  }
+  .about-image a.icon {
+    right: -10px;
+    bottom: -10px;
+    width: 90px;
+    height: 90px;
+  }
+
+  /* Teams */
+  .teams-content h2.web-title {
+    font-size: 60px;
+  }
+  .teams-content.one h2.web-title:nth-child(1) {
+    margin-left: -20px;
+  }
+  .teams-content.one h2.web-title:nth-child(2) {
+    margin-left: 150px;
+    margin-top: 30px;
+  }
+  .team-img.one {
+    position: absolute;
+    width: 370px;
+    filter: none;
+    right: 10px;
+    top: -40px;
+  }
+  .team-img.two {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    filter: drop-shadow(0px 180px 194px #506bb3);
+    width: 300px;
+  }
+  .teams-content.two h2.web-title:nth-child(2) {
+    position: absolute;
+    bottom: -80px;
+    right: 0px;
+    color: var(--c7);
+    opacity: 0.8;
+  }
+  .teams-content.two h2.web-title:nth-child(1) {
+    margin-top: 20px;
+    margin-left: 220px;
+    z-index: 9999;
+    position: relative;
+  }
+
+  /* Finish / Anitmation */
+  .anitmation {
+    padding: 40px 30px 0;
+    margin-bottom: 60px;
+  }
+  .anitmation .discover-box:nth-child(even) {
+    margin-top: 300px;
+    margin-bottom: 40px;
+  }
+  .discover-box {
+    padding: 40px 30px;
+    border-radius: 20px;
+  }
+
+  /* Different */
+  .different .img {
+    margin-top: 0;
+    width: 250px;
+    height: 180px;
+  }
+  .different .img img {
+    height: 100%;
+    object-fit: contain;
+  }
+  .different-box {
+    padding: 30px;
+    height: auto !important;
+  }
+  .different-box.margin-minus {
+    margin-top: 0;
+    height: auto !important;
+  }
+  .different .row:last-child .col-lg-4 .different-box {
+    height: 300px !important;
+  }
+  .blog {
+    padding-top: 50px;
+  }
+  .idea {
+    margin-bottom: 20px;
+  }
+  .different-heading p {
+    margin-bottom: 40px;
+  }
+
+  /* Blog */
+  .blog-head p {
+    margin-bottom: 40px;
+  }
+
+  /* Form */
+  .contact-form-wrapper {
+    padding: 40px 30px;
+    border-radius: 24px;
+    margin-bottom: 40px;
+  }
+  .form-group label,
+  .interest-wrap > label {
+    font-size: 18px;
+  }
+  .interest-item span {
+    padding: 10px 16px;
+    font-size: 13px;
+  }
+  .submit-btn {
+    font-size: 22px;
+  }
+  .submit-btn .icon {
+    padding: 16px;
+  }
+
+  /* Footer */
+  .idea h2.web-title {
+    font-size: 30px;
+  }
+  .info-item span {
+    font-size: 24px;
+    margin-bottom: 16px !important;
+  }
+  .info-item ul li a {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  .social-links ul {
+    gap: 20px;
+    margin-top: 24px;
+  }
+  .footer-bottom {
+    padding: 30px 0 20px;
+  }
+  .footer-bottom ul {
+    justify-content: flex-start;
+    margin-top: 10px;
+  }
+
+  /* Services */
+  .svc-bottom-strip {
+    flex-direction: column;
+    text-align: center;
+    padding: 24px 20px;
+  }
+
+  /* Contact boxes */
+  .contact-box {
+    padding: 24px 16px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ============================================================
+   6. MOBILE  320px – 767px  (shared rules)
+   ============================================================ */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+  .blog {
+    padding-top: 50px;
+  }
+  .banner-content-text {
+    text-align: center;
+  }
+  /* Cursor */
+  .cursor1,
+  .cursor2 {
+    display: none;
+  }
+
+  /* Header */
+  .header {
+    top: 16px;
+  }
+  .site-logo a {
+    width: 55%;
+  }
+  p {
+    font-size: 14px !important;
+    line-height: 1.4;
+  }
+  .banner-content {
+    bottom: auto;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* Ham menu */
+  .ham-menu-btn a {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 8px;
+  }
+  .ham-menu-btn span {
+    display: block;
+    width: 26px;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+  }
+
+  /* Banner */
+  .banner-img {
+    height: 620px;
+  }
+  .marquee.image-marquee .marquee--inner,
+  .marquee.image-marquee .marquee--inner .track,
+  .marquee.image-marquee .marquee--inner .img,
+  .marquee.image-marquee .marquee--inner .img img {
+    height: 100%;
+  }
+  .banner-content-inner h1 {
+    font-size: 34px;
+    line-height: 1.2;
+  }
+  .banner-btn {
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .banner-content-box {
+    display: none;
+  }
+  .banner-content-box-2 {
+    display: none;
+  }
+  .wiew-project {
+    display: none;
+  }
+
+  /* Marquee */
+  .marquee-slider .marquee span {
+    font-size: 22px;
+    margin: 0 20px;
+  }
+  .different .img {
+    margin-top: 0;
+    width: 250px;
+    height: 180px;
+  }
+  .different .img img {
+    height: 100%;
+    object-fit: contain;
+  }
+  .footer-bottom ul li a {
+    font-size: 14px;
+  }
+  .marquee.image-marquee {
+    height: 200px;
+  }
+
+  /* Global titles */
+  h2.web-title {
+    font-size: 28px;
+    line-height: 1.3;
+  }
+  h5.web-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+    line-height: 1.5;
+  }
+  h6.web-title {
+    font-size: 22px;
+  }
+
+  /* Trusted */
+  .trusted-image {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-top: 20px;
+  }
+
+  /* About */
+  .about-image {
+    margin-top: 24px;
+    border-radius: 20px;
+    height: 250px;
+  }
+  .about-image img {
+    border-radius: 20px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .about-image a.icon {
+    right: -5px;
+    bottom: -10px;
+    width: 70px;
+    height: 70px;
+  }
+  a.icon img {
+    width: 36px;
+    height: 56px;
+    object-fit: contain;
+  }
+
+  /* Teams */
+  .teams-content h2.web-title {
+    font-size: 42px;
+  }
+  .teams-content.one h2.web-title:nth-child(1) {
+    margin-left: 0;
+  }
+  .teams-content.one h2.web-title:nth-child(2) {
+    margin-left: 150px;
+    margin-top: 30px;
+  }
+  .team-img.one {
+    position: absolute;
+    width: 270px;
+    filter: none;
+    right: 10px;
+    top: -40px;
+  }
+  .team-img.two {
+    position: absolute;
+    left: 0;
+    bottom: -40px;
+    filter: drop-shadow(0px 180px 194px #506bb3);
+    width: 200px;
+  }
+  .teams-content.two h2.web-title:nth-child(2) {
+    position: absolute;
+    bottom: -80px;
+    right: 0px;
+    color: var(--c7);
+    opacity: 0.8;
+  }
+  .teams-content.two h2.web-title:nth-child(1) {
+    margin-top: 20px;
+    margin-left: 220px;
+    z-index: 9999;
+    position: relative;
+  }
+
+  /* Finish / Anitmation */
+  .anitmation {
+    height: auto;
+    grid-template-columns: 1fr;
+    padding: 30px 16px 0;
+    gap: 24px;
+    margin-bottom: 40px;
+    overflow-y: visible;
+  }
+  .anitmation .discover-box:nth-child(even) {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .discover-box {
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+  .finish .count span {
+    font-size: 42px;
+  }
+  .finish .row:nth-child(2) .anitmation .discover-box:nth-child(odd)::before,
+  .finish .row:nth-child(2) .anitmation .discover-box:nth-child(even)::before {
+    display: none;
+  }
+
+  /* Different */
+  .different .img {
+    margin-top: 0;
+  }
+  .different-box {
+    padding: 24px;
+    height: auto !important;
+  }
+  .different-box.margin-minus {
+    margin-top: 0;
+    height: auto !important;
+  }
+  .different .row:last-child .col-lg-4:nth-child(odd) .different-box {
+    height: auto !important;
+  }
+  .different-heading p {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+
+  /* Blog */
+  .blog-head p {
+    margin-bottom: 30px;
+    font-size: 14px;
+  }
+  .blog-main .content {
+    left: 16px;
+    bottom: 16px;
+  }
+
+  /* Form */
+  .contact-form-wrapper {
+    padding: 30px 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+  }
+  .form-group label,
+  .interest-wrap > label {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .interest-item span {
+    padding: 8px 14px;
+    font-size: 12px;
+    border-radius: 30px;
+  }
+  .submit-btn {
+    font-size: 18px;
+    gap: 14px;
+  }
+  .submit-btn .icon {
+    padding: 14px;
+  }
+  .submit-btn .icon img {
+    width: 22px;
+    height: 22px;
+  }
+  .submit-wrap {
+    justify-content: center;
+  }
+
+  /* Contact boxes */
+  .contact-box {
+    padding: 20px 14px;
+    flex-direction: column;
+    text-align: center;
+    gap: 12px;
+  }
+  .contact-box .conten {
+    font-size: 15px;
+  }
+
+  /* Footer */
+  .idea {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .idea h2.web-title {
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+  .footer-btn {
+    display: flex;
+    justify-content: center;
+  }
+  .info-item span {
+    font-size: 20px;
+    margin-bottom: 12px !important;
+  }
+  .info-item ul li a {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+  .site-logo p.web-color {
+    font-size: 13px;
+    margin-top: 16px;
+  }
+  .social-links ul {
+    gap: 16px;
+    margin-top: 20px;
+  }
+  .social-links ul li img {
+    width: 22px;
+    height: 22px;
+  }
+  .footer-bottom {
+    padding: 24px 0 16px;
+  }
+  .footer-bottom ul {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .footer-bottom span {
+    font-size: 13px;
+  }
+
+  /* Services */
+  .services-pk {
+    padding: 60px 0;
+  }
+  .svc-header {
+    margin-bottom: 36px;
+  }
+  .svc-bottom-strip {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 16px;
+    margin-top: 36px;
+  }
+  .svc-main-title {
+    font-size: 28px;
+  }
+  .svc-strip-text {
+    font-size: 15px;
+  }
+  .svc-card {
+    padding: 24px 20px;
+  }
+
+  /* Back to top */
+  .back-to-top {
+    right: 16px;
+    bottom: 16px;
+    width: 52px;
+    height: 52px;
+  }
+
+  /* Hover button global */
+  .hover-btn {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 13px;
+  }
+}
+
+/* ============================================================
+   7. SMALL MOBILE  320px – 445px
+   ============================================================ */
+@media only screen and (min-width: 320px) and (max-width: 445px) {
+  .team-img.one {
+    display: none;
+  }
+  .team-img.two {
+    width: 150px;
+  }
+  .teams-content.two h2.web-title:nth-child(1) {
+    margin-left: 140px;
+  }
+  .teams-content.one h2.web-title:nth-child(2) {
+    margin-left: 110px;
+    margin-top: 20px;
+  }
+  .teams-content.two h2.web-title:nth-child(2) {
+    bottom: -60px;
+    right: -70px;
+  }
+  /* Banner */
+  .banner-img {
+    height: 560px;
+  }
+  .banner-content-inner h1 {
+    font-size: 28px;
+  }
+
+  /* Titles */
+  h2.web-title {
+    font-size: 24px;
+  }
+  h5.web-title {
+    font-size: 16px;
+  }
+  h6.web-title {
+    font-size: 18px;
+  }
+
+  /* Teams */
+  .teams-content h2.web-title {
+    font-size: 32px;
+  }
+
+  /* Trusted */
+  .trusted-image {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+  }
+
+  /* Anitmation */
+  .discover-box {
+    padding: 24px 16px;
+  }
+
+  /* Form */
+  .contact-form-wrapper {
+    padding: 24px 14px;
+  }
+  .submit-btn {
+    font-size: 16px;
+  }
+
+  /* Footer */
+  .idea h2.web-title {
+    font-size: 20px;
+  }
+  .info-item span {
+    font-size: 17px;
+  }
+  .site-logo a {
+    width: 50%;
+  }
+
+  /* Marquee */
+  .marquee-slider .marquee span {
+    font-size: 18px;
+  }
+
+  /* Spacing overrides */
+  .spacing-200 {
+    padding: 50px 0;
+  }
+  .spacing-150 {
+    padding: 44px 0;
+  }
+  .spacing-100 {
+    padding: 36px 0;
+  }
+  .spacing-80 {
+    padding: 28px 0;
+  }
+  .spacing-60 {
+    padding: 22px 0;
+  }
+}
+
+/* ============================================================
+   8. VERY SMALL MOBILE  320px – 375px
+   ============================================================ */
+@media only screen and (min-width: 320px) and (max-width: 375px) {
+  /* Banner */
+  .banner-img {
+    height: 520px;
+  }
+  .banner-content-inner h1 {
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  /* Titles */
+  h2.web-title {
+    font-size: 22px;
+  }
+  h5.web-title {
+    font-size: 14px;
+  }
+  h6.web-title {
+    font-size: 16px;
+  }
+
+  /* Teams */
+  .teams-content h2.web-title {
+    font-size: 28px;
+  }
+  .team-img.one {
+    width: 90%;
+  }
+
+  /* Trusted */
+  .trusted-image {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+
+  /* Discover */
+  .discover-box {
+    padding: 20px 14px;
+    border-radius: 14px;
+  }
+
+  /* Form */
+  .contact-form-wrapper {
+    padding: 20px 12px;
+    border-radius: 16px;
+  }
+  .form-group label,
+  .interest-wrap > label {
+    font-size: 14px;
+  }
+  .interest-item span {
+    padding: 6px 10px;
+    font-size: 11px;
+  }
+  .submit-btn {
+    font-size: 14px;
+    gap: 10px;
+  }
+  .submit-btn .icon {
+    padding: 10px;
+  }
+  .submit-btn .icon img {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Footer */
+  .idea h2.web-title {
+    font-size: 18px;
+  }
+  .info-item span {
+    font-size: 15px;
+  }
+  .info-item ul li a {
+    font-size: 12px;
+  }
+  .footer-bottom span {
+    font-size: 11px;
+  }
+  .social-links ul li img {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Hover btn */
+  .hover-btn {
+    padding: 8px 16px;
+    font-size: 12px;
+  }
+
+  /* Marquee */
+  .marquee-slider .marquee span {
+    font-size: 16px;
+    margin: 0 8px;
+  }
+
+  /* Back to top */
+  .back-to-top {
+    right: 12px;
+    bottom: 12px;
+    width: 46px;
+    height: 46px;
+  }
+}
