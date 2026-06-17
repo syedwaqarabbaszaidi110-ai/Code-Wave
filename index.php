@@ -227,8 +227,8 @@
         <div class="row justify-content-between align-items-center">
             <div class="col-lg-6 col-md-6 col-12">
                 <div class="about-content">
-                    <h2 class="web-title">About</h2>
-                    <h2 class="web-title" style="font-weight: 100;">CodeWave</h2>
+                    <h2 class="web-title" style="font-weight: 100;">About</h2>
+                    <h2 class="web-title" >CodeWave</h2>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 col-12">
@@ -301,7 +301,7 @@
                         </div>
                         <h6 class="web-title">Discover</h6>
                         <p>
-                            <strong>Your Vision Before We Build</strong>
+                            <span>Your Vision Before We Build</span>
                             Every successful product starts with clarity. We begin by understanding your business, audience, goals, and challenges to uncover insights that shape the foundation of a meaningful digital experience.
                         </p>
                     </div>
@@ -311,7 +311,7 @@
                         </div>
                         <h6 class="web-title">Discover</h6>
                         <p>
-                            <strong>Your Vision Before We Build</strong>
+                            <span>Your Vision Before We Build</span>
                             Every successful product starts with clarity. We begin by understanding your business, audience, goals, and challenges to uncover insights that shape the foundation of a meaningful digital experience.
                         </p>
                     </div>
@@ -321,7 +321,7 @@
                         </div>
                         <h6 class="web-title">Discover</h6>
                         <p>
-                            <strong>Your Vision Before We Build</strong>
+                            <span>Your Vision Before We Build</span>
                             Every successful product starts with clarity. We begin by understanding your business, audience, goals, and challenges to uncover insights that shape the foundation of a meaningful digital experience.
                         </p>
                     </div>
@@ -331,7 +331,7 @@
                         </div>
                         <h6 class="web-title">Discover</h6>
                         <p>
-                            <strong>Your Vision Before We Build</strong>
+                            <span>Your Vision Before We Build</span>
                             Every successful product starts with clarity. We begin by understanding your business, audience, goals, and challenges to uncover insights that shape the foundation of a meaningful digital experience.
                         </p>
                     </div>
@@ -411,7 +411,7 @@
                                 </div>
                                 <div class="svc-card-content">
                                     <h3>Web Development</h3>
-                                    <p>Custom websites, web apps, e-commerce portals, and CMS solutions built with modern stacks — React, Next.js, Laravel, WordPress.</p>
+                                    <p class="web-color">Custom websites, web apps, e-commerce portals, and CMS solutions built with modern stacks — React, Next.js, Laravel, WordPress.</p>
                                 </div>
                                 <div class="svc-card-arrow">
                                     <div class="icon">
@@ -434,7 +434,7 @@
                                 </div>
                                 <div class="svc-card-content">
                                     <h3>Mobile App Development</h3>
-                                    <p>iOS and Android apps with Flutter & React Native. Smooth UX, real-time features, and App Store-ready performance from day one.</p>
+                                    <p class="web-color">iOS and Android apps with Flutter & React Native. Smooth UX, real-time features, and App Store-ready performance from day one.</p>
                                 </div>
                                 <div class="svc-card-arrow">
                                     <div class="icon">
@@ -456,7 +456,7 @@
                                 </div>
                                 <div class="svc-card-content">
                                     <h3>UI/UX Design</h3>
-                                    <p>Research-backed design systems, wireframes, and pixel-perfect Figma prototypes that turn complex products into delightful experiences.</p>
+                                    <p class="web-color">Research-backed design systems, wireframes, and pixel-perfect Figma prototypes that turn complex products into delightful experiences.</p>
                                 </div>
                                 <div class="svc-card-arrow">
                                     <div class="icon">
@@ -477,7 +477,7 @@
                                 </div>
                                 <div class="svc-card-content">
                                     <h3>AI & Machine Learning</h3>
-                                    <p>Custom AI models, LLM integrations, chatbots, OCR, and data pipelines. We bring AI out of the lab and into your product.</p>
+                                    <p class="web-color">Custom AI models, LLM integrations, chatbots, OCR, and data pipelines. We bring AI out of the lab and into your product.</p>
                                 </div>
                                 <div class="svc-card-arrow">
                                     <div class="icon">
@@ -498,7 +498,7 @@
                                 </div>
                                 <div class="svc-card-content">
                                     <h3>AI & Machine Learning</h3>
-                                    <p>Custom AI models, LLM integrations, chatbots, OCR, and data pipelines. We bring AI out of the lab and into your product.</p>
+                                    <p class="web-color">Custom AI models, LLM integrations, chatbots, OCR, and data pipelines. We bring AI out of the lab and into your product.</p>
                                 </div>
                                 <div class="svc-card-arrow">
                                     <div class="icon">
@@ -519,7 +519,7 @@
                                 </div>
                                 <div class="svc-card-content">
                                     <h3>SaaS Product Development</h3>
-                                    <p>End-to-end SaaS platforms with multi-tenancy, subscription billing, role-based access, and scalable cloud infrastructure on AWS & GCP.</p>
+                                    <p class="web-color">End-to-end SaaS platforms with multi-tenancy, subscription billing, role-based access, and scalable cloud infrastructure on AWS & GCP.</p>
                                 </div>
                                 <div class="svc-card-arrow">
                                     <div class="icon">
@@ -541,7 +541,7 @@
                                 </div>
                                 <div class="svc-card-content">
                                     <h3>ERP & Enterprise Systems</h3>
-                                    <p>Custom ERP, HRM, CRM, and POS systems for Pakistan's textile, retail, and manufacturing sectors — built to match your workflow exactly.</p>
+                                    <p class="web-color">Custom ERP, HRM, CRM, and POS systems for Pakistan's textile, retail, and manufacturing sectors — built to match your workflow exactly.</p>
                                 </div>
                                 <div class="svc-card-arrow">
                                     <div class="icon">
@@ -563,7 +563,7 @@
                                 </div>
                                 <div class="svc-card-content">
                                     <h3>API & Backend Development</h3>
-                                    <p>Scalable REST & GraphQL APIs, microservices, payment gateway integrations (JazzCash, EasyPaisa, Stripe), and third-party system hooks.</p>
+                                    <p class="web-color">Scalable REST & GraphQL APIs, microservices, payment gateway integrations (JazzCash, EasyPaisa, Stripe), and third-party system hooks.</p>
                                 </div>
                                 <div class="svc-card-arrow">
                                     <div class="icon">
@@ -583,7 +583,7 @@
                                 </div>
                                 <div class="svc-card-content">
                                     <h3>E-Commerce Solutions</h3>
-                                    <p>Custom Shopify stores, WooCommerce setups, and bespoke e-commerce platforms with full local payment support and logistics integrations.</p>
+                                    <p class="web-color">Custom Shopify stores, WooCommerce setups, and bespoke e-commerce platforms with full local payment support and logistics integrations.</p>
                                 </div>
                                 <div class="svc-card-arrow">
                                     <div class="icon">
@@ -605,7 +605,7 @@
                                 </div>
                                 <div class="svc-card-content">
                                     <h3>Digital Marketing & SEO</h3>
-                                    <p>Growth-focused SEO, Google Ads, social campaigns, and conversion-rate optimization for Pakistani and international markets.</p>
+                                    <p class="web-color">Growth-focused SEO, Google Ads, social campaigns, and conversion-rate optimization for Pakistani and international markets.</p>
                                 </div>
                                 <div class="svc-card-arrow">
                                     <div class="icon">

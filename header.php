@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/fonts/Sf-Pro/style.css">
+    <link rel="stylesheet" href="assets/fonts/sf-pro-display.css">
 </head>
 
 <body>
