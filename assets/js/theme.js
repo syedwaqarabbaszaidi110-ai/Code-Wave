@@ -367,19 +367,6 @@ function initAllAnimations() {
             ease: "back.out(1.7)"
         }, "-=0.3");
 
-    // Contact info cards
-    gsap.from(".contact-box", {
-        scrollTrigger: {
-            trigger: ".contact-box",
-            start: "top 85%",
-            toggleActions: "play none none reverse"
-        },
-        x: 50,
-        opacity: 0,
-        stagger: 0.15,
-        duration: 0.8,
-        ease: "power3.out"
-    });
     // ---- FOOTER ANIMATION ----
     if (document.querySelector(".footer")) {
         gsap.from(".footer .idea, .footer .info-item, .footer-bottom", {
@@ -731,85 +718,85 @@ const serviceSlider = new Swiper(".svc-slider", {
    ============================================================ */
 
 (function () {
-  'use strict';
+    'use strict';
 
-  /* ── Element refs ─────────────────────────────────────────── */
-  const hamburger      = document.getElementById('hamburger');
-  const mobileNav      = document.getElementById('mobileNav');
-  const mobileOverlay  = document.getElementById('mobileNavOverlay');
-  const closeBtn       = document.getElementById('mobileNavClose');
-  const navLinks       = document.querySelectorAll('.mobile-nav-link');
+    /* ── Element refs ─────────────────────────────────────────── */
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+    const mobileOverlay = document.getElementById('mobileNavOverlay');
+    const closeBtn = document.getElementById('mobileNavClose');
+    const navLinks = document.querySelectorAll('.mobile-nav-link');
 
-  if (!hamburger || !mobileNav) return; // safety guard
+    if (!hamburger || !mobileNav) return; // safety guard
 
-  /* ── Open ─────────────────────────────────────────────────── */
-  function openNav() {
-    mobileNav.classList.add('is-open');
-    mobileOverlay.classList.add('active');
-    hamburger.classList.add('is-active');
-    hamburger.setAttribute('aria-expanded', 'true');
-    document.body.classList.add('nav-open');
+    /* ── Open ─────────────────────────────────────────────────── */
+    function openNav() {
+        mobileNav.classList.add('is-open');
+        mobileOverlay.classList.add('active');
+        hamburger.classList.add('is-active');
+        hamburger.setAttribute('aria-expanded', 'true');
+        document.body.classList.add('nav-open');
 
-    // Trap focus inside nav (a11y)
-    mobileNav.focus({ preventScroll: true });
-  }
+        // Trap focus inside nav (a11y)
+        mobileNav.focus({ preventScroll: true });
+    }
 
-  /* ── Close ────────────────────────────────────────────────── */
-  function closeNav() {
-    mobileNav.classList.remove('is-open');
-    mobileOverlay.classList.remove('active');
-    hamburger.classList.remove('is-active');
-    hamburger.setAttribute('aria-expanded', 'false');
-    document.body.classList.remove('nav-open');
-  }
+    /* ── Close ────────────────────────────────────────────────── */
+    function closeNav() {
+        mobileNav.classList.remove('is-open');
+        mobileOverlay.classList.remove('active');
+        hamburger.classList.remove('is-active');
+        hamburger.setAttribute('aria-expanded', 'false');
+        document.body.classList.remove('nav-open');
+    }
 
-  /* ── Toggle ───────────────────────────────────────────────── */
-  hamburger.addEventListener('click', function () {
-    const isOpen = mobileNav.classList.contains('is-open');
-    isOpen ? closeNav() : openNav();
-  });
-
-  /* ── Close on overlay click ───────────────────────────────── */
-  mobileOverlay.addEventListener('click', closeNav);
-
-  /* ── Close on X button ────────────────────────────────────── */
-  if (closeBtn) {
-    closeBtn.addEventListener('click', closeNav);
-  }
-
-  /* ── Close on nav link click ──────────────────────────────── */
-  navLinks.forEach(function (link) {
-    link.addEventListener('click', function () {
-      // Mark active
-      navLinks.forEach(function (l) { l.classList.remove('active'); });
-      link.classList.add('active');
-
-      // Close after short delay (feels natural)
-      setTimeout(closeNav, 300);
+    /* ── Toggle ───────────────────────────────────────────────── */
+    hamburger.addEventListener('click', function () {
+        const isOpen = mobileNav.classList.contains('is-open');
+        isOpen ? closeNav() : openNav();
     });
-  });
 
-  /* ── Close on ESC key ─────────────────────────────────────── */
-  document.addEventListener('keydown', function (e) {
-    if (e.key === 'Escape' && mobileNav.classList.contains('is-open')) {
-      closeNav();
-    }
-  });
+    /* ── Close on overlay click ───────────────────────────────── */
+    mobileOverlay.addEventListener('click', closeNav);
 
-  /* ── Close if window resizes to desktop ───────────────────── */
-  window.addEventListener('resize', function () {
-    if (window.innerWidth >= 992) {
-      closeNav();
+    /* ── Close on X button ────────────────────────────────────── */
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeNav);
     }
-  });
 
-  /* ── Active link on page load (match current URL) ─────────── */
-  navLinks.forEach(function (link) {
-    if (link.getAttribute('href') !== 'javascript:void(0);' &&
-        link.getAttribute('href') !== 'javascript:;' &&
-        window.location.pathname.endsWith(link.getAttribute('href'))) {
-      link.classList.add('active');
-    }
-  });
+    /* ── Close on nav link click ──────────────────────────────── */
+    navLinks.forEach(function (link) {
+        link.addEventListener('click', function () {
+            // Mark active
+            navLinks.forEach(function (l) { l.classList.remove('active'); });
+            link.classList.add('active');
+
+            // Close after short delay (feels natural)
+            setTimeout(closeNav, 300);
+        });
+    });
+
+    /* ── Close on ESC key ─────────────────────────────────────── */
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape' && mobileNav.classList.contains('is-open')) {
+            closeNav();
+        }
+    });
+
+    /* ── Close if window resizes to desktop ───────────────────── */
+    window.addEventListener('resize', function () {
+        if (window.innerWidth >= 992) {
+            closeNav();
+        }
+    });
+
+    /* ── Active link on page load (match current URL) ─────────── */
+    navLinks.forEach(function (link) {
+        if (link.getAttribute('href') !== 'javascript:void(0);' &&
+            link.getAttribute('href') !== 'javascript:;' &&
+            window.location.pathname.endsWith(link.getAttribute('href'))) {
+            link.classList.add('active');
+        }
+    });
 
 })();

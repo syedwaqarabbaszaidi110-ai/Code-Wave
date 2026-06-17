@@ -1062,7 +1062,6 @@ button.submit-btn:hover {
   height: 100%;
   overflow: hidden;
   transition: all .7s ease-in-out;
-  opacity: 1 !important;
 }
 .contact-box::after {
   content: "";
@@ -1143,7 +1142,7 @@ button.submit-btn:hover {
   margin-bottom: 15px;
   position: relative;
   overflow: hidden;
-  transition: all 0.6s ease-in-out;
+  transition: all 0.4s ease-in-out;
 }
 .info-item ul li a::after {
   position: absolute;
@@ -1159,7 +1158,7 @@ button.submit-btn:hover {
 }
 
 .info-item ul li a:hover::after {
-  left: 5px;
+  left: 0px;
 }
 
 .info-item ul li a:hover {
