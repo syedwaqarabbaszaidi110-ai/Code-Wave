@@ -12,7 +12,7 @@
                         <h1>Creating Digital Experiences</h1>
                         <h1 style="font-weight: 100; font-style: italic; color: var(--c6);">That Feel Effortless</h1>
                         <div class="banner-btn">
-                            <a href="javascript:void(0);" class="hover-btn">
+                            <a href="contact.php" class="hover-btn">
                                 <span class="btn-text-wrap">
                                     <span class="btn-text top">Let’s Build Something</span>
                                     <span class="btn-text bottom">Let’s Build Something</span>
@@ -39,7 +39,7 @@
                 </div>
                 <div class="col-lg-3">
                     <div class="wiew-project">
-                        <a class="icon" href="javascript:void(0)">
+                        <a class="icon" href="work.php">
                             <img src="assets/images/icon/arrow-banner.svg" alt="">
                         </a>
                         <div class="content">
@@ -239,7 +239,7 @@
             <div class="col-lg-12">
                 <div class="about-image">
                     <img src="assets/images/landing/about.jpg" alt="">
-                    <a class="icon" href="javascript:void(0)">
+                    <a class="icon" href="about.php">
                         <img src="assets/images/icon/arrow.svg" alt="">
                     </a>
                 </div>
@@ -344,7 +344,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-4">
                 <div class="finish-btn text-center">
-                    <a href="javascript:void(0);" class="hover-btn">
+                    <a href="contact.php" class="hover-btn">
                         <span class="btn-text-wrap">
                             <span class="btn-text top">Let’s Build Something</span>
                             <span class="btn-text bottom">Let’s Build Something</span>
@@ -632,10 +632,10 @@
             <div class="col-lg-12">
                 <div class="svc-bottom-strip">
                     <span class="svc-strip-text">Not sure which service fits your idea?</span>
-                    <a href="javascript:void(0);" class="hover-btn">
+                    <a href="services.php" class="hover-btn">
                         <span class="btn-text-wrap">
-                            <span class="btn-text top">Let’s Build Something</span>
-                            <span class="btn-text bottom">Let’s Build Something</span>
+                            <span class="btn-text top">View All Services</span>
+                            <span class="btn-text bottom">View All Services</span>
                         </span>
 
                         <span class="btn-icon">
@@ -752,7 +752,7 @@
                     <div class="content">
                         <h5 class="web-title">Lorem ipsum dolor sit amet</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                        <a href="" class="blog-card menu_hover">Learn More</a>
+                        <a href="javascript:;" class="blog-card menu_hover">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -764,7 +764,7 @@
                     <div class="content">
                         <h5 class="web-title">Lorem ipsum dolor sit amet</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                        <a href="" class="blog-card menu_hover">Learn More</a>
+                        <a href="javascript:;" class="blog-card menu_hover">Learn More</a>
                     </div>
                 </div>
             </div>
@@ -776,7 +776,7 @@
                     <div class="content">
                         <h5 class="web-title">Lorem ipsum dolor sit amet</h5>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                        <a href="" class="blog-card menu_hover">Learn More</a>
+                        <a href="javascript:;" class="blog-card menu_hover">Learn More</a>
                     </div>
                 </div>
             </div>

@@ -26,10 +26,10 @@
                     <span>Company</span>
                     <ul>
                         <li><a href="./" class="">Home</a></li>
-                        <li><a href="javascript:;" class="">About </a></li>
-                        <li><a href="javascript:;" class="">Work</a></li>
-                        <li><a href="javascript:;" class="">Careers</a></li>
-                        <li><a href="javascript:;" class="">Contact</a></li>
+                        <li><a href="about.php" class="">About </a></li>
+                        <li><a href="services.php" class="">Services</a></li>
+                        <li><a href="work.php" class="">Work</a></li>
+                        <li><a href="contact.php" class="">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -51,7 +51,7 @@
                     <h2 class="web-title" style="font-weight: 100; font-style: italic; margin: 0;">Got An Idea</h2>
                     <h2 class="web-title">Ready To Take Shape?</h2>
                     <div class="footer-btn">
-                        <a href="javascript:void(0);" class="hover-btn">
+                        <a href="contact.php" class="hover-btn">
                             <span class="btn-text-wrap">
                                 <span class="btn-text top">Discuss it</span>
                                 <span class="btn-text bottom">Discuss it</span>
@@ -74,8 +74,8 @@
             <div class="col-lg-4 col-md-6 col-6">
                 <div class="footer-bottom text-right">
                     <ul>
-                        <li><a href="javascript:;">Terms & Conditions</a></li>
-                        <li><a href="javascript:;">Privacy Policy</a></li>
+                        <li><a href="terms.php">Terms & Conditions</a></li>
+                        <li><a href="privacy.php">Privacy Policy</a></li>
                     </ul>
                 </div>
             </div>
@@ -90,18 +90,14 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- GSAP Core -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 
 <!-- GSAP Plugins -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/Draggable.min.js"></script> -->
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/TextPlugin.min.js"></script>
-
-<!-- AOS -->
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
 <!-- Your custom JS -->
 <script src="assets/js/theme.js"></script>

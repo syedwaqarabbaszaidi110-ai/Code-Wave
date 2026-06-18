@@ -16,11 +16,9 @@
     <link rel="stylesheet" href="assets/css/responcive.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/fonts/Sf-Pro/style.css">
-    <link rel="stylesheet" href="assets/fonts/sf-pro-display.css">
 </head>
 
-<body>
+<body class="<?php echo basename($_SERVER['PHP_SELF'], '.php'); ?>">
     <div class="cursor1"></div>
     <div class="cursor2"></div>
     <!-- LOADER -->
@@ -60,12 +58,12 @@
                         <div class="header_menu">
                             <ul>
                                 <li><a href="./" class="">Home</a></li>
-                                <li><a href="javascript:void(0);" class="">About Us</a></li>
-                                <li><a href="javascript:void(0);" class="">Services</a></li>
-                                <li><a href="javascript:void(0);" class="">Solutions</a></li>
-                                <li><a href="javascript:void(0);" class="">Our Work</a></li>
-                                <li><a href="javascript:void(0);" class="">Expertise</a></li>
-                                <li><a href="javascript:void(0);" class="">Contact</a></li>
+                                <li><a href="about.php" class="">About Us</a></li>
+                                <li><a href="services.php" class="">Services</a></li>
+                                <li><a href="solutions.php" class="">Solutions</a></li>
+                                <li><a href="work.php" class="">Our Work</a></li>
+                                <li><a href="expertise.php" class="">Expertise</a></li>
+                                <li><a href="contact.php" class="">Contact</a></li>
                             </ul>
                         </div>
                     </div>
@@ -81,7 +79,7 @@
 
                         <!-- Desktop Button (already exists, keep as is) -->
                         <div class="header-btn d-none d-lg-block text-right">
-                            <a href="javascript:void(0);" class="hover-btn">
+                            <a href="contact.php" class="hover-btn">
                                 <span class="btn-text-wrap">
                                     <span class="btn-text top">Work with us</span>
                                     <span class="btn-text bottom">Work with us</span>
@@ -125,14 +123,14 @@
                     </a>
                 </li>
                 <li class="mobile-nav-item" style="--i:2">
-                    <a href="javascript:void(0);" class="mobile-nav-link">
+                    <a href="about.php" class="mobile-nav-link">
                         <span class="nav-num">02</span>
                         <span class="nav-text">About Us</span>
                         <i class="fal fa-arrow-right"></i>
                     </a>
                 </li>
                 <li class="mobile-nav-item" style="--i:3">
-                    <a href="javascript:void(0);" class="mobile-nav-link">
+                    <a href="services.php" class="mobile-nav-link">
                         <span class="nav-num">03</span>
                         <span class="nav-text">Services</span>
                         <i class="fal fa-arrow-right"></i>
@@ -146,7 +144,7 @@
                     </a>
                 </li>
                 <li class="mobile-nav-item" style="--i:5">
-                    <a href="javascript:void(0);" class="mobile-nav-link">
+                    <a href="work.php" class="mobile-nav-link">
                         <span class="nav-num">05</span>
                         <span class="nav-text">Our Work</span>
                         <i class="fal fa-arrow-right"></i>
@@ -160,7 +158,7 @@
                     </a>
                 </li>
                 <li class="mobile-nav-item" style="--i:7">
-                    <a href="javascript:void(0);" class="mobile-nav-link">
+                    <a href="contact.php" class="mobile-nav-link">
                         <span class="nav-num">07</span>
                         <span class="nav-text">Contact</span>
                         <i class="fal fa-arrow-right"></i>
@@ -170,7 +168,7 @@
 
             <!-- Nav Footer -->
             <div class="mobile-nav-footer">
-                <a href="javascript:void(0);" class="hover-btn mobile-cta">
+                <a href="contact.php" class="hover-btn mobile-cta">
                     <span class="btn-text-wrap">
                         <span class="btn-text top">Work with us</span>
                         <span class="btn-text bottom">Work with us</span>

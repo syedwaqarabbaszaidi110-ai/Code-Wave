@@ -109,6 +109,12 @@
    4. SMALL DESKTOPS / LARGE TABLETS  992px – 1199px
    ============================================================ */
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .inner-banner {
+    height: 450px;
+  }
+  .inner-banner .banner-content {
+    margin-top: 60px;
+  }
   .footer .site-logo {
     padding-right: 0px;
   }
@@ -524,12 +530,24 @@
     flex-direction: column;
     text-align: center;
   }
+  .inner-banner {
+    height: 400px;
+  }
+  .inner-banner .banner-content {
+    margin-top: 40px;
+  }
 }
 
 /* ============================================================
    6. MOBILE  320px – 767px  (shared rules)
    ============================================================ */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  .inner-banner {
+    height: 350px;
+  }
+  .inner-banner .banner-content {
+    margin-top: 0;
+  }
   .blog {
     padding-top: 50px;
   }

@@ -4,4 +4,4 @@ A modern digital agency website built with HTML, CSS, JavaScript, and GSAP.
 
 ## Preview
 
-![CodeWave Homepage](screenshots/homepage.png)
+![CodeWave Homepage](assets/screenshots/homepage.png)
