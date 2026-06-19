@@ -8,9 +8,9 @@
                 <div class="col-lg-12">
                     <div class="banner-content-inner">
                         <h6 class="web-title">OUR WORK</h6>
-                        <h1>We build the digital</h1>
-                        <h1 style="font-weight: 100; font-style: italic; color: var(--c6);">products of tomorrow</h1>
-                        <p>Founded by engineers who believe great software is a craft, not a commodity. We exist to build products that matter.</p>
+                        <h1 class="d-inline">Featured </h1>
+                        <h1 class="d-inline" style="font-weight: 100; font-style: italic; color: var(--c6);">Projects</h1>
+                        <p>Production sites we've shipped — e-commerce, corporate, and local brands — tuned for performance, clarity, and growth.</p>
                     </div>
                 </div>
             </div>

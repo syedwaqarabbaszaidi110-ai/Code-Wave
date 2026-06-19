@@ -7,79 +7,32 @@ gsap.registerPlugin(ScrollTrigger, TextPlugin, ScrollToPlugin);
 // COUNTER ANIMATION (GSAP - jQuery removed)
 // ======================
 function initCounter() {
-    ScrollTrigger.create({
-        trigger: ".trusted",        // apna counter section yahan
-        start: "top 80%",
-        once: true,
-        onEnter: () => {
-            document.querySelectorAll('.count-numb').forEach(el => {
-                const target = parseFloat(el.getAttribute('data-target') || el.textContent.trim());
-                const suffix = el.getAttribute('data-suffix') || '';
-                const isDecimal = el.getAttribute('data-decimal') === 'true';
-                const obj = { val: 0 };
+    document.querySelectorAll('.count-numb').forEach(el => {
+        const target = parseFloat(
+            el.getAttribute('data-target') || el.textContent.trim()
+        );
 
-                gsap.to(obj, {
-                    val: target,
-                    duration: 2.5,
-                    ease: "power2.out",
-                    onUpdate() {
-                        el.textContent = (isDecimal
-                            ? obj.val.toFixed(1)
-                            : Math.ceil(obj.val)
-                        ) + suffix;
-                    },
-                    onComplete() {
-                        el.textContent = target + suffix;
-                    }
-                });
-            });
-        }
-    });
-}
+        const suffix = el.getAttribute('data-suffix') || '';
+        const isDecimal = el.getAttribute('data-decimal') === 'true';
 
-// ======================
-// CURSOR SHADE EFFECT
-// ======================
-function initCursorShade() {
-    document.querySelectorAll('.cursor-shade').forEach(shade => {
-        const section = shade.closest('section') || shade.parentElement;
+        const obj = { val: 0 };
 
-        if (!section) return;
+        gsap.to(obj, {
+            val: target,
+            duration: 2.5,
+            ease: "power2.out",
 
-        gsap.set(shade, {
-            xPercent: -50,
-            yPercent: -50,
-            opacity: 0,
-            pointerEvents: 'none',
-            zIndex: 1
-        });
+            onUpdate() {
+                el.textContent = (
+                    isDecimal
+                        ? obj.val.toFixed(1)
+                        : Math.ceil(obj.val)
+                ) + suffix;
+            },
 
-        section.addEventListener('mouseenter', () => {
-            gsap.to(shade, {
-                opacity: 1,
-                duration: 0.3,
-                overwrite: true
-            });
-        });
-
-        section.addEventListener('mousemove', (e) => {
-            const rect = section.getBoundingClientRect();
-
-            gsap.to(shade, {
-                x: e.clientX - rect.left,
-                y: e.clientY - rect.top,
-                duration: 0.4,
-                ease: 'power2.out',
-                overwrite: true
-            });
-        });
-
-        section.addEventListener('mouseleave', () => {
-            gsap.to(shade, {
-                opacity: 0,
-                duration: 0.3,
-                overwrite: true
-            });
+            onComplete() {
+                el.textContent = target + suffix;
+            }
         });
     });
 }
@@ -136,34 +89,222 @@ function initMenuHover() {
 }
 
 // ======================
-// LOADER / PRELOADER
+// LOADER / INTRO
 // ======================
-function hideLoader() {
-    const overlay = document.querySelector('.overlayS');
-    if (!overlay) return;
-    overlay.classList.add('hide');
-    setTimeout(() => {
-        overlay.style.display = 'none';
-        document.body.style.overflow = '';
-    }, 2000);
+function runLoaderAndIntro() {
+    const loader = document.getElementById("cwLoader");
+
+    // Agar loader element hi page par nahi hai to seedha main animations chala do
+    if (!loader) {
+        startMainAnimations();
+        return;
+    }
+
+    document.body.style.overflow = "hidden";
+
+    /* ======================
+       PARTICLES
+    ====================== */
+    const pc = document.getElementById("particles");
+
+    if (pc) {
+        for (let i = 0; i < 25; i++) {
+            const p = document.createElement("div");
+            p.className = "particle";
+            p.style.cssText = `
+                left:${Math.random() * 100}%;
+                width:${Math.random() * 2 + 1}px;
+                height:${Math.random() * 2 + 1}px;
+                animation-duration:${Math.random() * 8 + 6}s;
+                animation-delay:${Math.random() * 5}s;
+                opacity:${Math.random() * 0.6 + 0.2};
+            `;
+            pc.appendChild(p);
+        }
+    }
+
+    /* ======================
+       STATUS TEXT LOOP
+    ====================== */
+    const msgs = [
+        "Initializing Experience",
+        "Loading Creative Assets",
+        "Building Interactions",
+        "Calibrating Systems",
+        "Launching CodeWave",
+    ];
+
+    let mi = 0;
+    const st = document.getElementById("status");
+
+    // FIX: interval ko reference store kiya gaya hai taake loader exit hone par
+    // ise clearInterval se band kiya ja sake (pehle ye hamesha background me chalta rehta tha)
+    let statusInterval = null;
+
+    if (st) {
+        statusInterval = setInterval(() => {
+            gsap.to(st, {
+                opacity: 0,
+                y: -8,
+                duration: 0.25,
+                onComplete: () => {
+                    mi = (mi + 1) % msgs.length;
+                    st.textContent = msgs[mi];
+
+                    gsap.fromTo(
+                        st,
+                        { opacity: 0, y: 8 },
+                        { opacity: 1, y: 0, duration: 0.3 }
+                    );
+                },
+            });
+        }, 900);
+    }
+
+    /* ======================
+       ORBIT ANIMATIONS
+    ====================== */
+    gsap.to("#r1", {
+        rotation: 360,
+        duration: 10,
+        repeat: -1,
+        ease: "none",
+        transformOrigin: "50% 50%",
+    });
+
+    gsap.to("#r2", {
+        rotation: -360,
+        duration: 7,
+        repeat: -1,
+        ease: "none",
+        transformOrigin: "50% 50%",
+    });
+
+    gsap.to("#r3", {
+        rotation: 360,
+        duration: 5,
+        repeat: -1,
+        ease: "none",
+        transformOrigin: "50% 50%",
+    });
+
+    /* ======================
+       GLOW
+    ====================== */
+    gsap.to("#g1", {
+        x: 100,
+        y: -60,
+        duration: 4,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+    });
+
+    gsap.to("#g2", {
+        x: -100,
+        y: 60,
+        duration: 5.5,
+        repeat: -1,
+        yoyo: true,
+        ease: "sine.inOut",
+    });
+
+    /* ======================
+       GRID
+    ====================== */
+    gsap.to("#grid", {
+        backgroundPosition: "0 60px",
+        duration: 4,
+        repeat: -1,
+        ease: "none",
+    });
+
+    /* ======================
+       LOGO
+    ====================== */
+    gsap.to(".logo-char", {
+        opacity: 1,
+        y: 0,
+        stagger: 0.07,
+        duration: 0.7,
+        ease: "back.out(1.5)",
+        delay: 0.3,
+    });
+
+    gsap.to("#tagline", {
+        opacity: 1,
+        duration: 1,
+        delay: 1.2,
+        ease: "power2.out",
+    });
+
+    /* ======================
+       EXIT LOADER
+    ====================== */
+    function exitLoader() {
+        // FIX: status interval ko band karo warna ye loader hatne ke baad bhi chalta rehta
+        if (statusInterval) clearInterval(statusInterval);
+
+        gsap.to(loader, {
+            opacity: 0,
+            scale: 1.04,
+            duration: 0.9,
+            ease: "power4.inOut",
+            onComplete: () => {
+                loader.style.display = "none";
+                document.body.style.overflow = "";
+                startMainAnimations();
+                initCounter();
+            },
+        });
+    }
+
+    // FIX: exitLoader() pehle kabhi call hi nahi hota tha, isliye loader
+    // hamesha screen par atka rehta tha aur main site/banner animation
+    // kabhi shuru nahi hoti thi. Ab ek fixed delay ke baad (intro
+    // animations complete hone ke thodi der baad) exitLoader() call ho rahi hai.
+    gsap.delayedCall(3.6, exitLoader);
 }
 
-// ======================
-// BANNER ANIMATION
-// ======================
-function initPreloaderAndMain() {
-    hideLoader();
+/* ======================
+   MAIN WRAPPER + BANNER
+====================== */
+function startMainAnimations() {
 
-    gsap.to(".wrapper", { opacity: 1, duration: 1.2, ease: "power3.out", delay: 0.2 });
+    gsap.to(".wrapper", {
+        opacity: 1,
+        duration: 1,
+        ease: "power2.out"
+    });
 
     gsap.timeline()
-        .from(".banner-img img", { scale: 1.3, opacity: 0, duration: 1.4, ease: "power4.out" })
-        .from(".banner-content-inner h1", { y: 120, opacity: 0, duration: 1, stagger: 0.2, ease: "back.out(1.2)" }, "-=0.8")
-        .from(".banner-btn", { y: 50, opacity: 0, duration: 0.8, ease: "elastic.out(1, 0.5)" }, "-=0.5")
-        .from(".banner-content-text", { y: 40, opacity: 0, duration: 0.8, ease: "power3.out" }, "-=0.4")
-        .from(".banner-content-box-2", { x: -60, opacity: 0, rotation: -10, duration: 0.9, ease: "back.out(1.5)" }, "-=0.6")
-        .from(".wiew-project", { x: 80, opacity: 0, rotation: 15, duration: 0.9, ease: "power4.out" }, "-=0.7")
-        .from(".design-code-anim", { x: -80, opacity: 0, rotation: 0, duration: 0.9, ease: "power4.out" }, "-=0.5");
+        .from(".banner-img img", {
+            scale: 1.3,
+            opacity: 0,
+            duration: 1.6,
+            ease: "expo.out"
+        })
+
+        .from(".banner-content-inner h1", {
+            y: 140,
+            opacity: 0,
+            stagger: 0.12,
+            duration: 1,
+            ease: "power4.out"
+        }, "-=1")
+
+        .from(".banner-content-text", {
+            y: 50,
+            opacity: 0,
+            duration: 0.8
+        }, "-=0.6")
+
+        .from(".banner-btn", {
+            y: 40,
+            opacity: 0,
+            duration: 0.8,
+            ease: "back.out(2)"
+        }, "-=0.5");
 }
 
 // ======================
@@ -200,10 +341,10 @@ function initAllAnimations() {
     });
 
     // TEAMS
-    document.querySelectorAll(".teams-content .web-title").forEach(el => {
+    document.querySelectorAll(".teams-content .web-title").forEach((el, i) => {
         gsap.from(el, {
             scrollTrigger: { trigger: el, start: "top 85%", end: "bottom 60%", scrub: 0.5 },
-            x: (i) => (i % 2 === 0 ? -200 : 200), opacity: 0, duration: 1.5
+            x: (i % 2 === 0 ? -200 : 200), opacity: 0, duration: 1.5
         });
     });
     gsap.from(".team-img.one", {
@@ -290,7 +431,8 @@ function initBackToTop() {
     window.addEventListener("scroll", () => {
         const scrollTop = window.pageYOffset;
         const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-        if (circle) circle.style.strokeDashoffset = circ - (scrollTop / docHeight) * circ;
+        // FIX: docHeight 0 hone ki surat me division-by-zero (NaN) se bachao
+        if (circle && docHeight > 0) circle.style.strokeDashoffset = circ - (scrollTop / docHeight) * circ;
         gsap.to(btn, scrollTop > 400
             ? { opacity: 1, visibility: "visible", duration: 0.3 }
             : { opacity: 0, visibility: "hidden", duration: 0.3 });
@@ -362,27 +504,6 @@ function initServiceHUD() {
 }
 
 // ======================
-// CURSOR GLOW
-// ======================
-function initCursorGlow() {
-    document.addEventListener("mousemove", (e) => {
-        let glow = document.querySelector(".cursor-glow");
-        if (!glow) {
-            glow = document.createElement("div");
-            glow.className = "cursor-glow";
-            Object.assign(glow.style, {
-                position: "fixed", width: "400px", height: "400px",
-                background: "radial-gradient(circle,rgba(73,98,172,0.25) 0%,rgba(3,6,22,0) 70%)",
-                borderRadius: "50%", pointerEvents: "none", zIndex: "9998",
-                transform: "translate(-50%,-50%)"
-            });
-            document.body.appendChild(glow);
-        }
-        gsap.to(glow, { x: e.clientX, y: e.clientY, duration: 0.4, ease: "power2.out" });
-    });
-}
-
-// ======================
 // SMOOTH ANCHORS
 // ======================
 function initSmoothAnchors() {
@@ -434,39 +555,57 @@ function animateCards() {
 }
 
 // ======================
+// SWIPER
+// ======================
+// FIX: Swiper instance ab DOMContentLoaded se pehle hi top-level par mil jata
+// tha (ye thik tha), lekin yahan readability ke liye load handler ke sath
+// rakha gaya — taake animateCards() call hone se pehle Swiper guaranteed
+// initialize ho chuka ho.
+let serviceSlider = null;
+
+// ======================
 // APP INIT
 // ======================
 window.addEventListener("load", () => {
-    initMenuHover();
-    initPreloaderAndMain();
-    initAllAnimations();
-    initCounter();
-    initBackToTop();
-    initMarqueeDirectionControl();
-    initParallaxEffects();
-    initTextSplitting();
-    animateCards();
-    initCursorGlow();
-    initSmoothAnchors();
-    initCursorFollowFinishImages();
-    initCursorShade();          // ← cursor shade (har section ke liye kaam karta hai)
-    ScrollTrigger.refresh();
-});
 
-// ======================
-// SWIPER
-// ======================
-const serviceSlider = new Swiper(".svc-slider", {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    loop: true,
-    navigation: { nextEl: ".svc-next", prevEl: ".svc-prev" },
-    pagination: { el: ".swiper-pagination", clickable: true },
-    breakpoints: {
-        0: { slidesPerView: 1 },
-        768: { slidesPerView: 2 },
-        1200: { slidesPerView: 3 }
+    try {
+        // Swiper ko sab se pehle initialize karo taake animateCards()
+        // ko slides milein
+        if (window.Swiper && document.querySelector(".svc-slider")) {
+            serviceSlider = new Swiper(".svc-slider", {
+                slidesPerView: 3,
+                spaceBetween: 30,
+                loop: true,
+                navigation: { nextEl: ".svc-next", prevEl: ".svc-prev" },
+                pagination: { el: ".swiper-pagination", clickable: true },
+                breakpoints: {
+                    0: { slidesPerView: 1 },
+                    768: { slidesPerView: 2 },
+                    1200: { slidesPerView: 3 }
+                }
+            });
+        }
+
+        initMenuHover();
+
+        runLoaderAndIntro();
+
+        initAllAnimations();
+        initBackToTop();
+        initMarqueeDirectionControl();
+        initParallaxEffects();
+        initTextSplitting();
+        initServiceHUD();
+        animateCards();
+        initSmoothAnchors();
+        initCursorFollowFinishImages();
+
+        ScrollTrigger.refresh();
+
+    } catch (err) {
+        console.error("Init Error:", err);
     }
+
 });
 
 /* ============================================================
@@ -498,7 +637,7 @@ const serviceSlider = new Swiper(".svc-slider", {
     };
 
     hamburger.addEventListener('click', () => mobileNav.classList.contains('is-open') ? closeNav() : openNav());
-    mobileOverlay.addEventListener('click', closeNav);
+    if (mobileOverlay) mobileOverlay.addEventListener('click', closeNav);
     if (closeBtn) closeBtn.addEventListener('click', closeNav);
 
     navLinks.forEach(link => {

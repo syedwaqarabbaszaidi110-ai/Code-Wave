@@ -285,7 +285,6 @@
 <!-- SERVICES SECTION END -->
 
 <section class="ready spacing-150 pt-0 position-relative">
-    <div class="cursor-shade"></div>
 
     <div class="container">
         <div class="row">

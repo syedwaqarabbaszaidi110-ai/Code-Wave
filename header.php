@@ -22,13 +22,49 @@
     <div class="cursor1"></div>
     <div class="cursor2"></div>
     <!-- LOADER -->
-    <div id="loader">
-        <div class="overlayS">
-            <div class="box">
-                <div class="cube"></div>
-                <div class="cube"></div>
-                <div class="cube"></div>
-                <div class="cube"></div>
+
+    <div class="loader-wrap" id="cwLoader">
+        <div class="grid" id="grid"></div>
+        <div class="glow glow-1" id="g1"></div>
+        <div class="glow glow-2" id="g2"></div>
+        <div class="glow glow-3"></div>
+        <div class="particles" id="particles"></div>
+        <div class="scanline"></div>
+
+        <div class="content">
+            <div class="orbit">
+                <div class="orbit-ring ring-1" id="r1">
+                    <div class="ring-dot"></div>
+                </div>
+                <div class="orbit-ring ring-2" id="r2">
+                    <div class="ring-dot"></div>
+                </div>
+                <div class="orbit-ring ring-3" id="r3">
+                    <div class="ring-dot"></div>
+                </div>
+                <div class="core"></div>
+            </div>
+
+            <h1 class="logo">
+                <span class="logo-char">C</span><span class="logo-char">O</span><span class="logo-char">D</span><span class="logo-char">E</span>&nbsp;<em><span class="logo-char">W</span><span class="logo-char">A</span><span class="logo-char">V</span><span class="logo-char">E</span></em>
+            </h1>
+
+            <p class="tagline" id="tagline">PREMIUM DIGITAL EXPERIENCE</p>
+            <p class="status" id="status">Initializing Experience</p>
+
+            <div class="waves">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
             </div>
         </div>
     </div>

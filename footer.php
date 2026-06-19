@@ -74,7 +74,7 @@
             <div class="col-lg-4 col-md-6 col-6">
                 <div class="footer-bottom text-right">
                     <ul>
-                        <li><a href="terms.php">Terms & Conditions</a></li>
+                        <li><a href="term.php">Terms & Conditions</a></li>
                         <li><a href="privacy.php">Privacy Policy</a></li>
                     </ul>
                 </div>
