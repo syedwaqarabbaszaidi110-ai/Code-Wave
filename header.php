@@ -32,7 +32,7 @@
         <div class="scanline"></div>
 
         <div class="content">
-            <div class="orbit">
+            <!-- <div class="orbit">
                 <div class="orbit-ring ring-1" id="r1">
                     <div class="ring-dot"></div>
                 </div>
@@ -43,15 +43,7 @@
                     <div class="ring-dot"></div>
                 </div>
                 <div class="core"></div>
-            </div>
-
-            <h1 class="logo">
-                <span class="logo-char">C</span><span class="logo-char">O</span><span class="logo-char">D</span><span class="logo-char">E</span>&nbsp;<em><span class="logo-char">W</span><span class="logo-char">A</span><span class="logo-char">V</span><span class="logo-char">E</span></em>
-            </h1>
-
-            <p class="tagline" id="tagline">PREMIUM DIGITAL EXPERIENCE</p>
-            <p class="status" id="status">Initializing Experience</p>
-
+            </div> -->
             <div class="waves">
                 <div class="bar"></div>
                 <div class="bar"></div>
@@ -66,6 +58,13 @@
                 <div class="bar"></div>
                 <div class="bar"></div>
             </div>
+
+            <h1 class="logo">
+                <span class="logo-char">C</span><span class="logo-char">O</span><span class="logo-char">D</span><span class="logo-char">E</span>&nbsp;<em><span class="logo-char">W</span><span class="logo-char">A</span><span class="logo-char">V</span><span class="logo-char">E</span></em>
+            </h1>
+
+            <p class="tagline" id="tagline">PREMIUM DIGITAL EXPERIENCE</p>
+            <p class="status" id="status">Initializing Experience</p>
         </div>
     </div>
     <div class="back-to-top">
@@ -96,9 +95,9 @@
                                 <li><a href="./" class="">Home</a></li>
                                 <li><a href="about.php" class="">About Us</a></li>
                                 <li><a href="services.php" class="">Services</a></li>
-                                <li><a href="solutions.php" class="">Solutions</a></li>
-                                <li><a href="work.php" class="">Our Work</a></li>
-                                <li><a href="expertise.php" class="">Expertise</a></li>
+                                <!-- <li><a href="solutions.php" class="">Solutions</a></li> -->
+                                <!-- <li><a href="work.php" class="">Our Work</a></li> -->
+                                <!-- <li><a href="expertise.php" class="">Expertise</a></li> -->
                                 <li><a href="contact.php" class="">Contact</a></li>
                             </ul>
                         </div>
@@ -172,27 +171,27 @@
                         <i class="fal fa-arrow-right"></i>
                     </a>
                 </li>
-                <li class="mobile-nav-item" style="--i:4">
+                <!-- <li class="mobile-nav-item" style="--i:4">
                     <a href="javascript:void(0);" class="mobile-nav-link">
                         <span class="nav-num">04</span>
                         <span class="nav-text">Solutions</span>
                         <i class="fal fa-arrow-right"></i>
                     </a>
-                </li>
-                <li class="mobile-nav-item" style="--i:5">
+                </li> -->
+                <!-- <li class="mobile-nav-item" style="--i:5">
                     <a href="work.php" class="mobile-nav-link">
                         <span class="nav-num">05</span>
                         <span class="nav-text">Our Work</span>
                         <i class="fal fa-arrow-right"></i>
                     </a>
-                </li>
-                <li class="mobile-nav-item" style="--i:6">
+                </li> -->
+                <!-- <li class="mobile-nav-item" style="--i:6">
                     <a href="javascript:void(0);" class="mobile-nav-link">
                         <span class="nav-num">06</span>
                         <span class="nav-text">Expertise</span>
                         <i class="fal fa-arrow-right"></i>
                     </a>
-                </li>
+                </li> -->
                 <li class="mobile-nav-item" style="--i:7">
                     <a href="contact.php" class="mobile-nav-link">
                         <span class="nav-num">07</span>

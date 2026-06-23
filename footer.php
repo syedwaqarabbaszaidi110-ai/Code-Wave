@@ -37,11 +37,11 @@
                 <div class="info-item">
                     <span>Services</span>
                     <ul>
-                        <li><a href="javascript:;" class="">Web Development</a></li>
-                        <li><a href="javascript:;" class="">App Development</a></li>
-                        <li><a href="javascript:;" class="">UI/UX Design</a></li>
-                        <li><a href="javascript:;" class="">AI Solutions</a></li>
-                        <li><a href="javascript:;" class="">Product Design</a></li>
+                        <li><a href="services.php" class="">Web Development</a></li>
+                        <li><a href="services.php" class="">App Development</a></li>
+                        <li><a href="services.php" class="">UI/UX Design</a></li>
+                        <li><a href="services.php" class="">AI Solutions</a></li>
+                        <li><a href="services.php" class="">Product Design</a></li>
                     </ul>
                 </div>
             </div>
@@ -92,6 +92,7 @@
 <!-- GSAP Core -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
 
 
 <!-- GSAP Plugins -->

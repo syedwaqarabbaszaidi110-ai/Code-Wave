@@ -282,7 +282,7 @@
 <!-- TEAM END -->
 
 <!-- FINISH START -->
-<section class="finish spacing-100" style="background-image: url('assets/images/landing/finish.png'); background-size: cover; background-repeat: no-repeat; background-position:center;">
+<section class="finish spacing-100" style="background-image: url('assets/images/landing/finish2.png'); background-size: cover; background-repeat: no-repeat; background-position:center;">
     <div class="container-fluid gx-0">
         <div class="row align-items-center justify-content-center">
             <div class="col-lg-6">

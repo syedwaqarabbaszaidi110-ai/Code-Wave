@@ -39,12 +39,12 @@ a:hover {
 :root {
   --btn: linear-gradient(117deg, #2a3b8e, #4f69b2);
   --btn-border: #ffffff3d;
-  --bg-body: #ffffff;
+  --bg-body: #030303;
   --c1: linear-gradient(117deg, #2a3b8e, #4f69b2);
   --c2: linear-gradient(117deg, #2a3b8e, #4f69b2);
   --c3: #3a4e9d;
-  --c4: #ffffff;
-  --c5: #000000;
+  --c4: #000000;
+  --c5: #ffffff;
   --c6: #4962ac;
   --c7: #73747d;
   --c8: #5358a7;
@@ -213,7 +213,6 @@ h5.web-title {
 /* HEADER START  */
 .site-logo a {
   width: 50%;
-  filter: drop-shadow(2px 4px 6px #c1c1c1);
 }
 .site-logo a:hover img {
   filter: drop-shadow(0 0px 30px var(--c3));
@@ -624,7 +623,7 @@ a.icon img {
 }
 .finish .count span {
   font-size: 64px;
-  color: var(--c4);
+  color: var(--c5);
   opacity: 0.1;
   font-weight: 600;
 }
@@ -1110,7 +1109,6 @@ button.submit-btn:hover {
   flex-direction: column;
   gap: 8px;
   font-size: 20px;
-  color: var(--c4);
 }
 
 .idea h2.web-title {
@@ -1809,7 +1807,8 @@ button.submit-btn:hover {
   opacity: .1;
 }
 .svc-card:hover .svc-card-num {
-  color: rgba(73, 98, 172, 0.08);
+  color: var(--c5);
+  opacity: .2;
 }
 
 .svc-bottom-strip {
@@ -2479,15 +2478,6 @@ body.about .about-content p {
 }
 .discover-box * {
     color: white;
-}
-.different-box * {
-    color: var(--c4);
-}
-.blog-main * {
-    color: var(--c4);
-}
-.contact-form-wrapper * {
-    color: var(--c4);
 }
 .footer-bottom ul li a {
     color: var(--c5);
