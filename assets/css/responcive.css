@@ -279,6 +279,9 @@
    5. TABLETS (LANDSCAPE & PORTRAIT)  768px – 991px
    ============================================================ */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  .projects-section .project-item a {
+    height: 500px;
+  }
   .footer .site-logo {
     padding-right: 300px;
   }
@@ -542,6 +545,24 @@
    6. MOBILE  320px – 767px  (shared rules)
    ============================================================ */
 @media only screen and (min-width: 320px) and (max-width: 767px) {
+  section.projects-section h2.web-title {
+    margin-bottom: 10px !important;
+    margin-top: 20px !important;
+  }
+  .projects-section .project-item.logo a,
+  .projects-section .project-item.social a {
+    height: 250px;
+  }
+  .projects-section .header_menu ul {
+    gap: 10px;
+    flex-wrap: wrap !important;
+  }
+  .projects-section .project-item a {
+    height: 400px;
+  }
+  .header_menu {
+    border-radius: 30px;
+  }
   .inner-banner {
     height: 350px;
   }

@@ -731,59 +731,6 @@
     </div>
 </section>
 <!-- DIFFERENT END -->
-
-<!-- BLOG START -->
-<section class="blog">
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-lg-8 col-12">
-                <div class="blog-head text-center">
-                    <h2 class="web-title">CodeWave Blogs & Update</h2>
-                    <p class="web-color">We help startups and growing brands craft intuitive digital experiences through UI/UX design, product strategy, and creative visuals that convert.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row justify-content-center cust-gap">
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="blog-main">
-                    <div class="img">
-                        <img src="assets/images/landing/blog1.png">
-                    </div>
-                    <div class="content">
-                        <h5 class="web-title">Lorem ipsum dolor sit amet</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                        <a href="javascript:;" class="blog-card menu_hover">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="blog-main">
-                    <div class="img">
-                        <img src="assets/images/landing/blog2.png">
-                    </div>
-                    <div class="content">
-                        <h5 class="web-title">Lorem ipsum dolor sit amet</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                        <a href="javascript:;" class="blog-card menu_hover">Learn More</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="blog-main">
-                    <div class="img">
-                        <img src="assets/images/landing/blog3.png">
-                    </div>
-                    <div class="content">
-                        <h5 class="web-title">Lorem ipsum dolor sit amet</h5>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-                        <a href="javascript:;" class="blog-card menu_hover">Learn More</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!-- BLOG END -->
 <section class="form footer spacing-100" style="background-image: url('assets/images/landing/form-bg.png');background-size: contain;background-position: left;position: relative;background-repeat: no-repeat;">
     <div class="container">
         <div class="row justify-content-center">
@@ -876,18 +823,7 @@
                     </div>
                     <div class="conten">
                         <span>Email Address</span>
-                        <a href="mailto:info@codewave.com" class="menu_hover">info@codewave.com</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="contact-box">
-                    <div class="icon">
-                        <img src="assets/images/icon/phone.svg" alt="">
-                    </div>
-                    <div class="conten">
-                        <span>Phone Number</span>
-                        <a href="tel:+921234567890" class="menu_hover">+92 123 456 7890</a>
+                        <a href="mailto:info@codewavetechnologies.net" class="">info@codewavetechnologies.net</a>
                     </div>
                 </div>
             </div>
@@ -898,7 +834,7 @@
                     </div>
                     <div class="conten">
                         <span>Location</span>
-                        <span>Suite # 105 Lorem IpsumKarachi</span>
+                        <span>House B-122, Block 13, Gulistan e Johar, Karachi.</span>
                     </div>
                 </div>
             </div>

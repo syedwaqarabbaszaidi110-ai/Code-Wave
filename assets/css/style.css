@@ -1360,8 +1360,7 @@ button.submit-btn:hover {
   }
 }
 
-.logo {
-  font-family: "Syncopate", sans-serif;
+.loader-wrap .logo {
   color: var(--c5);
   font-size: clamp(28px, 4vw, 52px);
   letter-spacing: 8px;
@@ -1804,11 +1803,11 @@ button.submit-btn:hover {
   pointer-events: none;
   transition: color 0.3s ease;
   font-style: italic;
-  opacity: .1;
+  opacity: 0.1;
 }
 .svc-card:hover .svc-card-num {
   color: var(--c5);
-  opacity: .2;
+  opacity: 0.2;
 }
 
 .svc-bottom-strip {
@@ -2477,25 +2476,85 @@ body.about .about-content p {
   margin-bottom: 10px;
 }
 .discover-box * {
-    color: white;
+  color: white;
 }
 .footer-bottom ul li a {
-    color: var(--c5);
+  color: var(--c5);
 }
 section.finish {
-    position: relative;
+  position: relative;
 }
 
 section.finish::before {
-    content: "";
-    position: absolute;
-    width: 90%;
-    height: 300px;
-    top: 0;
-    left: 50%;
-    border-radius: 40%;
-    z-index: -1;
-    filter: blur(130px);
-    background-color: #525ba9;
-    transform: translateX(-50%);
+  content: "";
+  position: absolute;
+  width: 90%;
+  height: 300px;
+  top: 0;
+  left: 50%;
+  border-radius: 40%;
+  z-index: -1;
+  filter: blur(130px);
+  background-color: #525ba9;
+  transform: translateX(-50%);
+}
+.projects-section button.hover-btn {
+  background: unset !important;
+  border: unset !important;
+  color: var(--c5);
+  margin: 7px 0px;
+}
+
+.projects-section button.hover-btn.active {
+  background: var(--c1) !important;
+  border-radius: 27px;
+  padding: 12px 40px;
+}
+.projects-section .project-item a {
+  height: 600px;
+  overflow: hidden;
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  display: block;
+}
+
+.projects-section .project-item a img {
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  transition: all 0.8s ease-in-out;
+}
+
+.projects-section .project-item a:hover img {
+  object-position: bottom;
+}
+.projects-section .header_menu ul {
+  gap: 20px;
+}
+.projects-section .project-item.logo a,
+.projects-section .project-item.social a {
+  height: 300px;
+}
+
+.fancybox__toolbar,
+.fancybox__nav,
+.fancybox__nav .f-button,
+.fancybox__toolbar .f-button,
+.fancybox__container .f-button {
+  opacity: 1 !important;
+  visibility: visible !important;
+  display: inline-flex !important;
+  pointer-events: auto !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  border: none !important;
+  z-index: 99999 !important;
+}
+.fancybox__container .f-button svg {
+  display: inline-block !important;
+  fill: #fff !important;
+  stroke: #fff !important;
+  opacity: 1 !important;
+}
+.fancybox__toolbar {
+  z-index: 99999 !important;
 }

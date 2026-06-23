@@ -29,18 +29,7 @@
                     </div>
                     <div class="conten">
                         <span>Email Address</span>
-                        <a href="mailto:info@codewave.com" class="menu_hover">info@codewave.com</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-6 col-12">
-                <div class="contact-box">
-                    <div class="icon">
-                        <img src="assets/images/icon/phone.svg" alt="">
-                    </div>
-                    <div class="conten">
-                        <span>Phone Number</span>
-                        <a href="tel:+921234567890" class="menu_hover">+92 123 456 7890</a>
+                        <a href="mailto:info@codewavetechnologies.net" class="">info@codewavetechnologies.net</a>
                     </div>
                 </div>
             </div>
@@ -51,7 +40,7 @@
                     </div>
                     <div class="conten">
                         <span>Location</span>
-                        <span>Suite # 105 Lorem IpsumKarachi</span>
+                        <span>House B-122, Block 13, Gulistan e Johar, Karachi.</span>
                     </div>
                 </div>
             </div>

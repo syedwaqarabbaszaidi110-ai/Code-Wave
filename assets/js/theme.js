@@ -663,33 +663,38 @@ window.addEventListener("load", () => {
 
 document.addEventListener("DOMContentLoaded", function () {
 
-    var iso = new Isotope('.project-grid', {
+    var gridEl = document.querySelector('.project-grid');
+
+    var iso = new Isotope(gridEl, {
         itemSelector: '.project-item',
         layoutMode: 'fitRows'
     });
 
+    // Re-layout once all images have actually loaded (prevents overlapping cards)
+    imagesLoaded(gridEl).on('progress', function () {
+        iso.layout();
+    });
+
     var filters = document.querySelectorAll('.filter-btn');
 
-    filters.forEach(function(btn) {
+    filters.forEach(function (btn) {
+        btn.addEventListener('click', function () {
 
-        btn.addEventListener('click', function() {
-
-            filters.forEach(function(el) {
-                el.classList.remove('active');
-                el.classList.remove('btn-dark');
+            filters.forEach(function (el) {
+                el.classList.remove('active', 'btn-dark');
                 el.classList.add('btn-outline-dark');
             });
 
-            this.classList.add('active');
+            this.classList.add('active', 'btn-dark');
             this.classList.remove('btn-outline-dark');
-            this.classList.add('btn-dark');
 
             var filterValue = this.getAttribute('data-filter');
-            iso.arrange({
-                filter: filterValue
-            });
+            iso.arrange({ filter: filterValue });
         });
-
     });
+
+    // Fancybox — bind AFTER the library script above has loaded.
+    // Delegated selector works fine even though Isotope repositions items.
+    Fancybox.bind('[data-fancybox="gallery"]', {});
 
 });
